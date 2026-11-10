@@ -1,0 +1,15 @@
+{
+  "id": "2026-11-10-snapsip-usa",
+  "title": "SnapSip: the magnetic lid that reseals any can",
+  "panel": "usa",
+  "currency": "USD",
+  "mode": "manual",
+  "created": "2026-11-10T21:05:00-05:00",
+  "source": { "type": "idea", "ref": "A magnetic, leak-proof lid that snaps onto any standard can and turns it into a resealable travel cup." },
+  "founder": { "name": "Maya Torres", "company": "SnapSip", "role": "Founder, industrial designer" },
+  "sharks": ["victor", "dana", "rosa", "lena", "marcus"],
+  "ask": { "amount": 250000, "equity": 10, "amount_label": "$250,000" },
+  "walkaway": { "min_valuation": 1500000, "max_equity": 18, "note": "Wants a retail partner; will not take a perpetual royalty." },
+  "brief": "Consumer product, 14 months on Amazon and own site. $410k trailing-12-month sales, $14.99 retail, $2.10 landed cost, 4.6 stars on 3,900 reviews. Patent pending. Solo founder plus two contractors.",
+  "assumptions": ["Utility patent not yet granted (assumed)"]
+}

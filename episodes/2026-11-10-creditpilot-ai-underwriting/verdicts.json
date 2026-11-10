@@ -1,0 +1,24 @@
+{
+  "verdicts": [
+    { "shark": "kabir", "status": "out", "scores": { "team": 8, "market": 8, "product": 7, "traction": 6, "economics": 7, "moat": 6 },
+      "line": "Neha, you're a superstar seller, but enterprise deals with six-month cycles are not my playground. I can't add value here. For that reason, I'm out.",
+      "feedback": "Strong founder voice. Sales motion is founder-led and slow; hire sellers before you scale marketing.",
+      "strengths": ["Founder sells with lived credibility", "Clear billboard line"], "concerns": ["4-6 month sales cycle", "No repeatable sales engine yet"] },
+    { "shark": "ananya", "status": "out", "scores": { "team": 8, "market": 7, "product": 7, "traction": 6, "economics": 7, "moat": 5 },
+      "line": "Your numbers are the cleanest I've seen this week, and I mean that. But the whale risk is real and I don't know this category well enough to fight it with you. I'm out, but I'm rooting for you.",
+      "feedback": "Numbers are consistent across every answer. Defensibility against bureau and LOS players needs a sharper story than speed.",
+      "strengths": ["Every number reconciled", "Honest about the third pilot"], "concerns": ["Incumbent bundling risk", "Moat is mostly data, still early"] },
+    { "shark": "vikram", "status": "in", "scores": { "team": 9, "market": 8, "product": 8, "traction": 6, "economics": 7, "moat": 7 },
+      "line": "Thirty-one times revenue is fantasy, and you know it. But you're a Level 2 founder: you told me what kills you before I asked. I'll make an offer, at a sane number.",
+      "feedback": "Founder-market fit is exceptional. Valuation is a market comp, not earned yet. Regulatory design is the hidden strength.",
+      "strengths": ["Founder-market fit from 30,000 signed loans", "Human-in-the-loop designed for RBI"], "concerns": ["31x ARR", "41% revenue concentration"] },
+    { "shark": "meera", "status": "in", "scores": { "team": 9, "market": 8, "product": 7, "traction": 6, "economics": 8, "moat": 6 },
+      "line": "78% gross margin, no rounding, and a CA could not trip you once. The concentration scares me, but I'd rather fix that with you than watch someone else do it. I'm in.",
+      "feedback": "Economics are healthy for a seed SaaS. The 41% single-customer concentration is the number to kill in the next two quarters.",
+      "strengths": ["78% gross margin", "Burn and runway stated to the lakh"], "concerns": ["41% concentration", "Long sales cycle stretches runway"] },
+    { "shark": "rohan", "status": "in", "scores": { "team": 9, "market": 9, "product": 9, "traction": 6, "economics": 7, "moat": 8 },
+      "line": "Eleven thousand labelled credit files and source-linked memos. This is real technology built for Bharat. I want in, and I want enough of it to matter.",
+      "feedback": "The labelled fraud dataset and source-linking layer are a genuine technical moat. Productise lender onboarding fast.",
+      "strengths": ["Proprietary labelled data", "Explainable, source-linked output"], "concerns": ["Two weeks custom mapping per lender", "Small team for enterprise demand"] }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rounds": [
+    { "title": "Round 1 · The Grilling", "sub": "Maya answers live", "exchanges": [
+      { "id": "r1x1", "shark": "victor", "q": "Four hundred ten thousand in sales and you want a two and a half million dollar valuation. That's six times sales for a plastic lid, my friend. Why?", "a": "Because the margin is 86% and the repeat rate is 31%. It's not a lid, it's a habit. And retail hasn't even started.", "by": "human", "react": "Habits don't pay dividends. Cash does." },
+      { "id": "r1x2", "shark": "lena", "q": "Do you have a patent, or patent pending? Because I can knock this off at a factory in two weeks.", "a": "Utility patent pending, filed last March, plus a design patent on the ring. Honestly, the pending part is why I need a partner who's fought knock-offs before.", "by": "human", "react": "Honest answer. I like honest." },
+      { "id": "r1x3", "shark": "dana", "q": "How do you sell it today? If you turned off Amazon ads tomorrow, what happens?", "a": "About 70% Amazon, 30% my site. Ads are 22% of revenue. If I turned them off, sales would probably drop by half. I'm not going to pretend otherwise.", "by": "human", "react": "Half your business is rented. That's the problem." },
+      { "id": "r1x4", "shark": "victor", "to": "dana", "banter": "Dana, she just told you half her sales are rented. Now you know why I like royalties: I get paid before the landlord." },
+      { "id": "r1x5", "shark": "rosa", "q": "What's the hardest sale you ever made for this thing?", "a": "A gas station chain in Ohio. Eight noes. On the ninth visit I spilled a Coke on the manager's desk on purpose, then did it again with SnapSip. They took 40 stores.", "by": "human", "react": "Oh, I LOVE her. That's a hustler." },
+      { "id": "r1x6", "shark": "marcus", "q": "Who's your core customer? Describe one person.", "a": "Jess, 34, nurse, drives forty minutes each way, drinks two energy drinks a shift and has ruined three car seats.", "by": "human", "react": "Jess. Now that's a customer I can build a brand around." }
+    ] },
+    { "title": "Round 2 · Going for the Throat", "sub": "Follow-ups", "exchanges": [
+      { "id": "r2x1", "shark": "lena", "q": "Could you deliver fifty thousand units in six weeks if I put you on TV?", "a": "Yes. My factory can do 80,000 a month with two weeks' notice, I'd just need the cash for inventory up front, which is what this money is for.", "by": "human", "react": "That's the right answer." },
+      { "id": "r2x2", "shark": "dana", "q": "What's your profit, not your sales, over the last twelve months?", "a": "About $38,000 after I paid myself $60,000. I put everything else back into inventory.", "by": "human", "react": "Thirty-eight grand. So it's a real business, just a small one." }
+    ] }
+  ]
+}

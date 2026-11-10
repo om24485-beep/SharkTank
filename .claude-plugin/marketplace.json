@@ -1,0 +1,12 @@
+{
+  "name": "sharktank",
+  "owner": { "name": "Om Narayan Mishra", "url": "https://github.com/om24485-beep" },
+  "plugins": [
+    {
+      "name": "sharktank",
+      "source": "./",
+      "description": "Pitch any idea or project to AI sharks from Shark Tank India and USA archetypes, watch it live, get a pitch-ready report.",
+      "version": "1.0.0"
+    }
+  ]
+}

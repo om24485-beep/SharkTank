@@ -1,0 +1,13 @@
+{
+  "offers": [
+    { "sharks": ["rohan"], "amount": 15000000, "equity": 6, "conditions": ["Rohan joins as tech advisor", "Board observer seat"], "line": "₹1.5 crore for 6%. And I'll personally sit with Arjun on the onboarding engine." },
+    { "sharks": ["vikram", "meera"], "amount": 15000000, "equity": 7, "conditions": ["Model-risk audit completed within 6 months", "Top customer below 30% of revenue in 12 months"], "line": "Meera and I will do it together. ₹1.5 crore for 7%, and between us you get every NBFC CEO's phone number." }
+  ],
+  "negotiation": [
+    { "who": "founder", "by": "agent", "kind": "counter", "text": "Thank you, both offers are generous. Our floor is ₹30 crore valuation. Rohan, Meera, would you come in together at ₹1.5 crore for 4.5%? One tech shark, one numbers shark.", "offer": { "sharks": ["rohan", "meera"], "amount": 15000000, "equity": 4.5 } },
+    { "who": "vikram", "kind": "banter", "text": "Wait, wait. You just cut me out of my own co-offer? Rohan, tumne kya jaadu kiya inpe?" },
+    { "who": "rohan", "kind": "counter", "text": "I like the pairing. Meera keeps the numbers honest, I keep the tech sharp. 5%, ₹1.5 crore, with ₹50 lakh released when you cross ₹4 crore ARR. Final.", "offer": { "sharks": ["rohan", "meera"], "amount": 15000000, "equity": 5, "conditions": ["₹1 crore now, ₹50 lakh at ₹4 crore ARR"] } },
+    { "who": "meera", "kind": "accept", "text": "I'm good with five. And Neha, we fix that 41% together. Done from my side." },
+    { "who": "founder", "by": "agent", "kind": "accept", "text": "₹30 crore valuation, two sharks who open doors and audit us. Rohan, Meera: we have a deal." }
+  ]
+}

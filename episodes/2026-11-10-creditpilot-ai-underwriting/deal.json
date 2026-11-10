@@ -1,0 +1,10 @@
+{
+  "status": "DEAL",
+  "sharks": ["rohan", "meera"],
+  "amount": 15000000,
+  "equity": 5,
+  "conditions": ["₹1 crore at close, ₹50 lakh at ₹4 crore ARR", "Rohan as tech advisor", "Concentration plan: top customer below 30% in 12 months"],
+  "headline": "₹1.5 crore for 5% from Rohan + Meera",
+  "summary": "The founders gave up 3 points of equity against their ask, but landed the two sharks who score the business highest: the tech visionary for the moat and the CFO for the concentration risk. Valuation settled at ₹30 crore, exactly the founders' floor.",
+  "founderLine": "We came for money and left with a CTO's best friend and a CFO's red pen. Worth every basis point."
+}

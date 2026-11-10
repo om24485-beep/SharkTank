@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(/episodes/**)",
+      "Write(/episodes/**)",
+      "Bash(node app/scripts/build-report.mjs:*)",
+      "Bash(node app/scripts/await-answers.mjs:*)",
+      "Bash(npm start)",
+      "Bash(curl -s localhost:4740/api/latest)"
+    ]
+  }
+}

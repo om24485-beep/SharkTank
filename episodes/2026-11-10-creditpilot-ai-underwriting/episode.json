@@ -1,0 +1,15 @@
+{
+  "id": "2026-11-10-creditpilot-ai-underwriting",
+  "title": "CreditPilot: AI underwriting co-pilot for NBFCs",
+  "panel": "india",
+  "currency": "INR",
+  "mode": "auto",
+  "created": "2026-11-10T22:40:00+05:30",
+  "source": { "type": "idea", "ref": "An AI co-pilot that reads bank statements, bureau data and GST returns and drafts a credit memo for MSME loans in minutes." },
+  "founder": { "name": "Neha & Arjun", "company": "CreditPilot", "role": "Co-founders (ex-NBFC credit head + ML engineer)" },
+  "sharks": ["kabir", "meera", "rohan", "vikram", "ananya"],
+  "ask": { "amount": 15000000, "equity": 2, "amount_label": "₹1.5 crore" },
+  "walkaway": { "min_valuation": 30000000, "max_equity": 6, "note": "Will not go below ₹30 crore valuation; prefers a shark who opens NBFC doors." },
+  "brief": "Seed-stage B2B SaaS. 6 NBFC pilots, 3 paying. ARR ₹2.4 crore, 78% gross margin, burn ₹28 lakh a month, 9 months runway. Cuts MSME credit turnaround from 3 days to 4 hours.",
+  "assumptions": ["Pilot NBFCs keep using the product after the free period (assumed)", "Founders have not yet completed an external model-risk audit (assumed)"]
+}

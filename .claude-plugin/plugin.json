@@ -1,0 +1,10 @@
+{
+  "name": "sharktank",
+  "version": "1.0.0",
+  "description": "Pitch any idea or project to a panel of AI sharks modelled on researched Shark Tank India and USA investing styles. Auto or manual founder mode, live avatar room on localhost, pitch-ready HTML outcome report.",
+  "author": { "name": "Om Narayan Mishra", "url": "https://github.com/om24485-beep" },
+  "homepage": "https://github.com/om24485-beep/SharkTank",
+  "repository": "https://github.com/om24485-beep/SharkTank",
+  "license": "MIT",
+  "keywords": ["shark-tank", "pitch", "investors", "startup", "fundraising", "multi-agent", "simulation"]
+}

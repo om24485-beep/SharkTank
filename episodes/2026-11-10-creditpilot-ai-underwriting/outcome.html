@@ -1,0 +1,859 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CreditPilot: AI underwriting co-pilot for NBFCs · Shark Tank outcome</title>
+<style>
+:root{--navy:#0a2540;--ink:#14213d;--mut:#5d6f8a;--gold:#e8a400;--gold2:#ffc53d;--line:#e3e9f2;--bg:#f6f8fc;--card:#fff;--red:#d7263d;--green:#14946a}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+.head{font-family:"Bebas Neue",Impact,"Arial Narrow Bold","Arial Black",sans-serif;letter-spacing:1px}
+header.hero{background:radial-gradient(900px 400px at 80% -20%,#1e5aa0,transparent),linear-gradient(160deg,#0a2540,#04111f);color:#fff;padding:28px 6vw 40px;position:relative;overflow:hidden}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{font-family:"Bebas Neue",Impact,"Arial Black",sans-serif;font-size:28px;letter-spacing:3px;color:var(--gold2)}
+.meta{display:flex;gap:6px;flex-wrap:wrap}.meta span{font-size:11px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;background:rgba(255,255,255,.1);padding:3px 9px;border-radius:99px}
+.hgrid{display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center;margin-top:26px}
+h1{font-size:clamp(28px,4vw,46px);line-height:1.08;margin:0 0 10px}
+.tag{color:#c9d8ee;font-size:18px;margin:0 0 18px}
+.stamp{display:inline-block;font-family:"Bebas Neue",Impact,"Arial Black",sans-serif;font-size:64px;line-height:1;letter-spacing:4px;padding:4px 18px;border:5px solid var(--gold2);color:var(--gold2);border-radius:12px;transform:rotate(-4deg);margin:4px 0 12px}
+.stamp.no{border-color:#ff6b81;color:#ff6b81}
+.dterms{font-size:22px;font-weight:800}.dsum{color:#c9d8ee;max-width:640px}
+.faces{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}.faces svg{width:120px;height:120px;filter:drop-shadow(0 10px 18px rgba(0,0,0,.4))}
+.quote{margin-top:12px;font-style:italic;color:#fff;border-left:3px solid var(--gold2);padding-left:12px}
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:-22px 6vw 0;position:relative}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:0 10px 30px rgba(10,37,64,.08)}
+.kpi label{display:block;font-size:10.5px;font-weight:800;letter-spacing:.7px;text-transform:uppercase;color:var(--mut)}.kpi b{font-size:22px}
+nav.toc{position:sticky;top:0;z-index:5;background:rgba(246,248,252,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);display:flex;gap:4px;padding:8px 6vw;overflow-x:auto;margin-top:22px}
+nav.toc a{font-size:13px;font-weight:700;color:var(--mut);text-decoration:none;padding:6px 10px;border-radius:8px;white-space:nowrap}nav.toc a:hover{background:#e9eef7;color:var(--ink)}
+main{padding:10px 6vw 60px}section{margin-top:44px}
+h2{font-family:"Bebas Neue",Impact,"Arial Black",sans-serif;font-size:36px;letter-spacing:1.5px;margin:0 0 4px;color:var(--navy)}
+.sub{color:var(--mut);margin:0 0 18px}
+.btn{display:inline-flex;align-items:center;gap:6px;font:inherit;font-weight:800;font-size:14px;border:0;border-radius:10px;padding:9px 14px;background:linear-gradient(180deg,var(--gold2),var(--gold));color:#2b1600;cursor:pointer;text-decoration:none}
+.btn.ghost{background:#e9eef7;color:var(--ink)}
+.deck{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.slide{position:relative;aspect-ratio:16/9;border-radius:14px;padding:22px 24px;color:#fff;overflow:hidden;background:radial-gradient(420px 200px at 85% 0%,rgba(255,197,61,.22),transparent),linear-gradient(135deg,#0f2d52,#081a30);box-shadow:0 14px 30px rgba(10,37,64,.18);display:flex;flex-direction:column;justify-content:center}
+.slide .sk{font-size:10.5px;font-weight:900;letter-spacing:2px;text-transform:uppercase;color:var(--gold2)}
+.slide .stt{font-family:"Bebas Neue",Impact,"Arial Black",sans-serif;font-size:30px;line-height:1.02;letter-spacing:.6px;margin:6px 0 8px}
+.slide p,.slide li{font-size:13px;color:#cfe0f5;margin:0}.slide ul{margin:4px 0 0;padding-left:18px}
+.sts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.st{background:rgba(255,255,255,.08);border-radius:8px;padding:5px 9px}.st b{display:block;font-family:"Bebas Neue",Impact,"Arial Black",sans-serif;font-size:22px;color:var(--gold2)}.st span{font-size:10px;text-transform:uppercase;color:#9fb5d3}
+.deck .slide{aspect-ratio:auto;min-height:210px}.sn{position:absolute;right:14px;bottom:10px;font-size:11px;color:#6f89ab}
+.fund{display:flex;height:14px;border-radius:7px;overflow:hidden;margin-top:12px}.legend{list-style:none;padding:0!important;margin-top:8px!important}.legend li{display:flex;gap:6px;align-items:center}.legend b{width:10px;height:10px;border-radius:3px;display:inline-block}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:0 6px 20px rgba(10,37,64,.05)}
+.card h3{margin:0 0 8px;font-size:15px;text-transform:uppercase;letter-spacing:.8px;color:var(--mut)}
+.card.v2{border:2px solid var(--gold);background:linear-gradient(180deg,#fffaf0,#fff)}
+.big{font-size:16.5px;line-height:1.6}
+.scoregrid{display:grid;grid-template-columns:360px 1fr;gap:18px;align-items:start}.radar{width:100%}
+table{width:100%;border-collapse:collapse}th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:center;font-size:14px}th{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--mut)}
+td.who{display:flex;gap:8px;align-items:center;text-align:left}td.who small{display:block;color:var(--mut);font-size:11px}td.tot{font-weight:900;font-size:16px}
+.chip{font-size:11px;font-weight:900;letter-spacing:.8px;padding:3px 9px;border-radius:99px}.chip.in{background:#d9f6ea;color:var(--green)}.chip.out{background:#fde2e6;color:var(--red)}
+.fbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;margin-top:16px}
+.fb{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}.fbh{display:flex;gap:10px;align-items:center}.fbh div{flex:1}.fbh small{display:block;color:var(--mut)}
+blockquote{margin:10px 0;padding:10px 12px;background:#f3f6fb;border-radius:10px;font-style:italic}
+.sc2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.sc2 h5{margin:0;font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--mut)}.sc2 ul{margin:4px 0 0;padding-left:16px;font-size:13px}
+.rt{font-family:"Bebas Neue",Impact,"Arial Black",sans-serif;font-size:24px;letter-spacing:1px;color:var(--navy);margin:22px 0 8px}
+.ln{display:grid;grid-template-columns:40px 1fr;gap:10px;margin:8px 0;max-width:860px}.ln p{margin:2px 0 0}.ln>div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 12px}
+.ln.a{margin-left:46px}.ln.a>div{background:#fff5ea;border-color:#ffd6ad}.ln.a.human>div{background:#eef1ff;border-color:#c3ccff}
+.ln.r{grid-template-columns:30px 1fr;margin-left:46px}.ln.r>div{background:transparent;border:0;color:var(--mut);font-style:italic;padding:2px 0}
+.ln.banter>div{background:#fff9e0;border-color:#f4e3a1}
+.tg{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;margin-left:8px;padding:1px 7px;border-radius:99px;background:#eef2f8;color:var(--mut)}
+.bar{display:grid;grid-template-columns:240px 1fr 100px;gap:10px;align-items:center;margin:8px 0;font-size:13.5px}.bar i{height:16px;border-radius:8px;background:#edf1f7;overflow:hidden}.bar em{display:block;height:100%;border-radius:8px}.bar b{text-align:right}
+.nego{list-style:none;padding:0;margin:0}.nego li{display:grid;grid-template-columns:34px 1fr;gap:10px;margin:10px 0}.nego p{margin:2px 0 0}.ot{font-style:normal;font-weight:800;background:#fff2cc;padding:1px 7px;border-radius:6px}
+.ts{background:var(--card);border:2px solid var(--navy);border-radius:16px;overflow:hidden}.ts.no{border-color:var(--red);padding-bottom:12px}.ts.no p{padding:0 18px}
+.tsh{display:flex;justify-content:space-between;background:var(--navy);color:#fff;padding:12px 18px}.ts.no .tsh{background:var(--red)}.tsh span{font-size:12px;opacity:.8}
+.ts th{text-align:left;width:220px}.ts td{text-align:left}.ts ul{margin:0;padding-left:18px}
+.verdict{font-size:19px;font-weight:700;background:var(--navy);color:#fff;border-radius:16px;padding:18px 22px}
+.fixes{display:grid;gap:12px;margin-top:16px}.fix{display:grid;grid-template-columns:44px 1fr;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}.fix h4{margin:0 0 4px;font-size:17px}.fix p{margin:2px 0;font-size:14px}
+.fn{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:900;background:linear-gradient(180deg,var(--gold2),var(--gold));color:#2b1600}
+.obj{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-top:12px}.oq{display:flex;gap:10px;align-items:center}
+.ow{display:grid;grid-template-columns:1fr 1.3fr;gap:12px;margin-top:10px}.ow h5{margin:0;font-size:11px;text-transform:uppercase;letter-spacing:.6px}.ow p{margin:4px 0 0;font-size:14px}
+.weak{background:#fdf0f2;border-radius:10px;padding:10px 12px}.weak h5{color:var(--red)}.strong{background:#e9f8f1;border-radius:10px;padding:10px 12px}.strong h5{color:var(--green)}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}.three ul,.three ol{margin:0;padding-left:18px;font-size:14px}
+.steps{list-style:none;padding:0;margin:0}.steps li{margin:8px 0;font-size:14px}.steps b{display:inline-block;min-width:88px;color:var(--gold)}
+footer{padding:26px 6vw;color:var(--mut);font-size:12.5px;border-top:1px solid var(--line);background:#fff}
+#present{position:fixed;inset:0;z-index:50;background:#020b16;display:none;align-items:center;justify-content:center}
+#present.on{display:flex}#present .slide{width:min(92vw,calc(88vh*16/9));border-radius:18px;padding:5vh 5vw}
+#present .slide .stt{font-size:clamp(36px,6vh,72px)}#present .slide p,#present .slide li{font-size:clamp(16px,2.4vh,26px)}#present .st b{font-size:clamp(28px,5vh,56px)}#present .st span{font-size:clamp(11px,1.5vh,16px)}#present .slide .sk{font-size:clamp(12px,1.6vh,16px)}
+#present .pc{position:fixed;bottom:16px;left:0;right:0;text-align:center;color:#6f89ab;font-size:13px}
+@media(max-width:900px){.hgrid,.twocol,.scoregrid,.three,.ow,.sc2{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}.bar{grid-template-columns:120px 1fr 80px}.faces svg{width:90px;height:90px}}
+@media print{nav.toc,.noprint,#present{display:none!important}body{background:#fff}.kpis{margin-top:10px}section{break-inside:avoid-page}.slide{break-inside:avoid}}
+</style></head><body>
+<header class="hero">
+  <div class="top"><div class="logo">🦈 THE TANK · EPISODE OUTCOME</div><div class="meta"><span>Shark Tank India</span><span>Auto · founder agent</span><span>2026-11-10</span></div></div>
+  <div class="hgrid">
+    <div>
+      <h1>CreditPilot: AI underwriting co-pilot for NBFCs</h1>
+      <p class="tag">From 3 days to 4 hours: the credit memo, written by AI, signed by humans.</p>
+      <div class="stamp ">DEAL</div>
+      <div class="dterms">₹1.5 Cr for 5% · valuation ₹30 Cr</div>
+      <p class="dsum">The founders gave up 3 points of equity against their ask, but landed the two sharks who score the business highest: the tech visionary for the moat and the CFO for the concentration risk. Valuation settled at ₹30 crore, exactly the founders' floor.</p>
+      <div class="quote">“We came for money and left with a CTO's best friend and a CFO's red pen. Worth every basis point.” — Neha &amp; Arjun</div>
+    </div>
+    <div class="faces"><svg viewBox="0 0 200 200" width="120" height="120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rohan Bhatia">
+  <defs><linearGradient id="g-rohan-j1479" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1ed2f6"/><stop offset="1" stop-color="#0091b5"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#0091b5"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-rohan-j1479)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#0091b5"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#0091b5"/>
+  <path d="M20 200 C 26 170, 60 160, 100 162 C 140 160, 174 170, 180 200 Z" fill="#03045e"/><path d="M60 166 Q100 188 140 166" stroke="#2b2c86" stroke-width="6" fill="none"/><line x1="90" y1="178" x2="88" y2="198" stroke="#fff" stroke-width="3"/><line x1="110" y1="178" x2="112" y2="198" stroke="#fff" stroke-width="3"/>
+  <path d="M58 80 Q72 72 86 80" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 80 Q128 72 142 80" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><svg viewBox="0 0 200 200" width="120" height="120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dr. Meera Kapoor">
+  <defs><linearGradient id="g-meera-cm145" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#994add"/><stop offset="1" stop-color="#58099c"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#58099c"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-meera-cm145)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#58099c"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#58099c"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#ffd166"/>
+  <path d="M58 80 Q72 72 86 80" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 80 Q128 72 142 80" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <rect x="54" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><rect x="110" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><path d="M90 98 Q100 92 110 98" stroke="#ffd166" stroke-width="4" fill="none"/>
+</svg><svg viewBox="0 0 200 200" width="120" height="120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Founder">
+  <path d="M150 100 L196 64 L188 100 L196 136 Z" fill="#e16100"/>
+  <ellipse cx="96" cy="100" rx="68" ry="54" fill="#ff7f11"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#fff" stroke-width="16" fill="none"/>
+  <path d="M120 52 Q128 100 120 148" stroke="#fff" stroke-width="14" fill="none"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#14213d" stroke-width="2" fill="none" transform="translate(-8 0)"/>
+  <path d="M84 46 Q100 20 118 50 Z" fill="#e66600"/>
+  <circle cx="52" cy="90" r="12" fill="#fff"/><circle cx="50" cy="92" r="6" fill="#14213d"/><circle cx="48" cy="89" r="2" fill="#fff"/>
+  <path d="M36 118 Q46 128 56 118" stroke="#14213d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="8" y="128" width="8" height="40" rx="3" fill="#333"/><circle cx="12" cy="124" r="9" fill="#555"/>
+  <rect x="46" y="160" width="100" height="26" rx="13" fill="#ffffff" opacity=".92"/><text x="96" y="178" font-family="Arial, sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#14213d">FOUNDER AI</text>
+</svg></div>
+  </div>
+</header>
+<div class="kpis">
+  <div class="kpi"><label>The ask</label><b>₹1.5 Cr · 2%</b></div>
+  <div class="kpi"><label>Ask valuation</label><b>₹75 Cr</b></div>
+  <div class="kpi"><label>Deal valuation</label><b>₹30 Cr</b></div>
+  <div class="kpi"><label>Equity given</label><b>5%</b></div>
+  <div class="kpi"><label>Sharks in</label><b>3 / 5</b></div>
+  <div class="kpi"><label>Avg shark score</label><b>7.4 / 10</b></div>
+</div>
+<nav class="toc"><a href="#deck">Pitch deck</a><a href="#pitch">60-sec pitch</a><a href="#scores">Scorecard</a><a href="#grill">The grilling</a><a href="#offers">Offers</a><a href="#terms">Terms</a><a href="#doctor">Pitch Doctor</a><a href="#" onclick="window.print();return false">Print / PDF</a></nav>
+<main>
+<section id="deck"><h2>The pitch deck</h2><p class="sub">The deck the founder walked in with. Press <b>Present</b> for full-screen slides (← → to move, Esc to exit).</p>
+<p class="noprint"><button class="btn" onclick="present(0)">▶ Present</button></p><div class="deck"><div class="slide"><div class="sk">The hook</div><div class="stt">₹25 lakh crore is waiting for a loan officer</div><p>India's MSME credit gap is one of the largest in the world, and most of it is stuck in a PDF queue.</p><div class="sts"><div class="st"><b>3 days</b><span>avg MSME credit TAT</span></div><div class="st"><b>62%</b><span>of analyst time on data entry</span></div></div><div class="sn">1</div></div><div class="slide"><div class="sk">The problem</div><div class="stt">Underwriting is a copy-paste job</div><ul><li>Analysts re-key 400+ data points per file</li><li>Fraud signals hide in 200-page statements</li><li>Every credit memo looks different, so risk committees cannot compare</li></ul><div class="sn">2</div></div><div class="slide"><div class="sk">The solution</div><div class="stt">CreditPilot: an AI co-pilot for the credit desk</div><ul><li>Reads statements, GST and bureau in under 90 seconds</li><li>Flags circular transactions, bounced EMIs and window dressing</li><li>Drafts a standard credit memo with every number linked to its source</li><li>Human-in-the-loop: the analyst approves, edits or rejects</li></ul><div class="sn">3</div></div><div class="slide"><div class="sk">Traction</div><div class="stt">6 pilots. 3 paying. ₹2.4 Cr ARR.</div><div class="sts"><div class="st"><b>₹2.4 Cr</b><span>ARR</span></div><div class="st"><b>78%</b><span>gross margin</span></div><div class="st"><b>4 hrs</b><span>new TAT</span></div><div class="st"><b>11,400</b><span>files processed</span></div></div><div class="sn">4</div></div><div class="slide"><div class="sk">Business model</div><div class="stt">Per-file pricing + platform fee</div><ul><li>₹180 per file processed</li><li>₹1.5 lakh monthly platform fee per lender</li><li>Average paying lender: ₹6.7 lakh a month</li></ul><div class="sn">5</div></div><div class="slide"><div class="sk">Why us</div><div class="stt">Built by a credit head and an ML engineer</div><p>Neha ran MSME credit at a mid-size NBFC for nine years and signed off on 30,000 loans. Arjun built document AI at a global bank. We have lived this problem from both sides of the desk.</p><div class="sn">6</div></div><div class="slide"><div class="sk">Competition</div><div class="stt">Not another bank-statement analyser</div><ul><li>Statement analysers stop at data extraction</li><li>Large LOS vendors are slow, custom and expensive</li><li>We own the memo: extraction + fraud + judgment-ready draft</li></ul><div class="sn">7</div></div><div class="slide ask"><div class="sk">The ask</div><div class="stt">₹1.5 crore for 2%</div><p>Implied valuation ₹75 Cr</p><div class="fund"><i style="flex:25;background:#e8a400" title="Model risk audit + RBI-ready governance"></i><i style="flex:40;background:#2a6fdb" title="Sales to 20 NBFCs"></i><i style="flex:35;background:#2dbd8f" title="Engineering"></i></div><ul class="legend"><li><b style="background:#e8a400"></b>Model risk audit + RBI-ready governance · 25%</li><li><b style="background:#2a6fdb"></b>Sales to 20 NBFCs · 40%</li><li><b style="background:#2dbd8f"></b>Engineering · 35%</li></ul><div class="sn">8</div></div></div></section>
+
+<section id="pitch"><h2>The 60-second pitch</h2><p class="sub">What was said in the Tank, and the Pitch Doctor's rewrite built from every shark's objections.</p>
+<div class="twocol"><div class="card"><h3>As pitched</h3><p class="big">CreditPilot turns three days of MSME underwriting into four hours. Our AI reads bank statements, GST and bureau data, flags fraud patterns, and drafts a credit memo where every number links to its source, while the analyst stays in control. Six NBFCs are live, three pay us, ARR is ₹2.4 crore at 78% gross margin. We want ₹1.5 crore to finish our model-risk audit and sell to twenty more lenders.</p></div><div class="card v2"><h3>Pitch v2 · investor-ready</h3><p class="big">Every NBFC in India makes small businesses wait three days for a loan while analysts copy numbers from PDFs. CreditPilot reads bank statements, GST and bureau data in 90 seconds, catches fraud patterns using 11,400 labelled credit outcomes, and drafts a credit memo where every number links to its source. We never approve a loan: a human signs every memo, with a full audit trail built for RBI. Six lenders are live, three pay us, ARR is ₹2.4 crore at 78% gross margin, and two more have signed for January. We are raising ₹1.5 crore to finish our model-risk audit, hire our first enterprise seller, and get no lender above 30% of revenue within a year.</p></div></div></section>
+
+<section id="scores"><h2>Investor scorecard</h2><p class="sub">Each shark scored six dimensions out of 10, weighted by what that shark cares about most. Gold is the panel average.</p>
+<div class="scoregrid"><div class="card"><svg viewBox="-50 -6 440 340" class="radar"><polygon points="170,136 190.78460969082653,148 190.78460969082653,172 170,184 149.21539030917347,172 149.21539030917347,148" fill="none" stroke="#d9e2ef" stroke-width="1"/><polygon points="170,112 211.56921938165306,136 211.56921938165306,184 170,208 128.43078061834694,184 128.43078061834694,136" fill="none" stroke="#d9e2ef" stroke-width="1"/><polygon points="170,88 232.35382907247958,124 232.35382907247958,196 170,232 107.64617092752043,196.00000000000003 107.64617092752042,124" fill="none" stroke="#d9e2ef" stroke-width="1"/><polygon points="170,64 253.1384387633061,112 253.1384387633061,208 170,256 86.8615612366939,208.00000000000003 86.86156123669389,111.99999999999999" fill="none" stroke="#d9e2ef" stroke-width="1"/><polygon points="170,40 273.92304845413264,100 273.92304845413264,219.99999999999997 170,280 66.07695154586739,220.00000000000006 66.07695154586737,99.99999999999999" fill="none" stroke="#d9e2ef" stroke-width="1"/><line x1="170" y1="160" x2="170" y2="40" stroke="#d9e2ef"/><text x="170" y="18" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#4a5b75">Founder &amp; team</text><line x1="170" y1="160" x2="273.92304845413264" y2="100" stroke="#d9e2ef"/><text x="292.9756073373903" y="89" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#4a5b75">Market size &amp; timing</text><line x1="170" y1="160" x2="273.92304845413264" y2="219.99999999999997" stroke="#d9e2ef"/><text x="292.97560733739033" y="230.99999999999997" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#4a5b75">Product &amp; differentiation</text><line x1="170" y1="160" x2="170" y2="280" stroke="#d9e2ef"/><text x="170" y="302" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#4a5b75">Traction &amp; proof</text><line x1="170" y1="160" x2="66.07695154586739" y2="220.00000000000006" stroke="#d9e2ef"/><text x="47.02439266260974" y="231.00000000000006" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#4a5b75">Unit economics</text><line x1="170" y1="160" x2="66.07695154586737" y2="99.99999999999999" stroke="#d9e2ef"/><text x="47.02439266260971" y="88.99999999999999" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#4a5b75">Defensibility</text><polygon points="170,64 253.1384387633061,112 242.74613391789285,202 170,232 97.25386608210717,202.00000000000003 107.64617092752042,124" fill="#ff6b35" fill-opacity="0.06" stroke="#ff6b35" stroke-width="2"/><polygon points="170,64 242.74613391789285,118 242.74613391789285,202 170,232 97.25386608210717,202.00000000000003 118.03847577293368,130" fill="#e63946" fill-opacity="0.06" stroke="#e63946" stroke-width="2"/><polygon points="170,52 253.1384387633061,112 253.1384387633061,208 170,232 97.25386608210717,202.00000000000003 97.25386608210715,118" fill="#264653" fill-opacity="0.06" stroke="#264653" stroke-width="2"/><polygon points="170,52 253.1384387633061,112 242.74613391789285,202 170,232 86.8615612366939,208.00000000000003 107.64617092752042,124" fill="#7b2cbf" fill-opacity="0.06" stroke="#7b2cbf" stroke-width="2"/><polygon points="170,52 263.5307436087194,106 263.5307436087194,213.99999999999997 170,232 97.25386608210717,202.00000000000003 86.86156123669389,111.99999999999999" fill="#00b4d8" fill-opacity="0.06" stroke="#00b4d8" stroke-width="2"/><polygon points="170,56.8 253.1384387633061,112 248.98151682514083,205.6 170,232 95.17540511302451,203.20000000000005 103.48924898935512,121.6" fill="#e8a400" fill-opacity="0.28" stroke="#e8a400" stroke-width="2"/><circle cx="170" cy="56.8" r="4" fill="#e8a400"/><circle cx="253.1384387633061" cy="112" r="4" fill="#e8a400"/><circle cx="248.98151682514083" cy="205.6" r="4" fill="#e8a400"/><circle cx="170" cy="232" r="4" fill="#e8a400"/><circle cx="95.17540511302451" cy="203.20000000000005" r="4" fill="#e8a400"/><circle cx="103.48924898935512" cy="121.6" r="4" fill="#e8a400"/></svg></div><div class="card" style="overflow-x:auto"><table><tr><th style="text-align:left">Shark</th><th>Founder &amp; team</th><th>Market size &amp; timing</th><th>Product &amp; differentiation</th><th>Traction &amp; proof</th><th>Unit economics</th><th>Defensibility</th><th>Score</th><th></th></tr><tr><td class="who"><svg viewBox="0 0 200 200" width="34" height="34" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kabir Malhotra">
+  <defs><linearGradient id="g-kabir-t2p61" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8953"/><stop offset="1" stop-color="#dc4812"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#dc4812"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-kabir-t2p61)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#dc4812"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#dc4812"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#1b1b1b"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <path d="M34 112 C 30 40, 170 40, 166 112" stroke="#14213d" stroke-width="9" fill="none"/><rect x="22" y="98" width="22" height="36" rx="9" fill="#ff006e"/><rect x="156" y="98" width="22" height="36" rx="9" fill="#ff006e"/>
+</svg><span><b>Kabir Malhotra</b><small>The D2C Hype Captain</small></span></td><td style="background:hsl(92.85714285714286 70% 82%)">8</td><td style="background:hsl(92.85714285714286 70% 82%)">8</td><td style="background:hsl(74.28571428571428 70% 84%)">7</td><td style="background:hsl(55.71428571428571 70% 86%)">6</td><td style="background:hsl(74.28571428571428 70% 84%)">7</td><td style="background:hsl(55.71428571428571 70% 86%)">6</td><td class="tot">7.0</td><td><span class="chip out">OUT</span></td></tr><tr><td class="who"><svg viewBox="0 0 200 200" width="34" height="34" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ananya Iyer">
+  <defs><linearGradient id="g-ananya-wej47" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5764"/><stop offset="1" stop-color="#c31623"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#c31623"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-ananya-wej47)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#c31623" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#c31623" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#c31623"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#c31623"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#f1faee"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <circle cx="34" cy="132" r="7" fill="none" stroke="#ffd166" stroke-width="3.5"/><circle cx="166" cy="132" r="7" fill="none" stroke="#ffd166" stroke-width="3.5"/>
+</svg><span><b>Ananya Iyer</b><small>The Bootstrapped Brand Builder</small></span></td><td style="background:hsl(92.85714285714286 70% 82%)">8</td><td style="background:hsl(74.28571428571428 70% 84%)">7</td><td style="background:hsl(74.28571428571428 70% 84%)">7</td><td style="background:hsl(55.71428571428571 70% 86%)">6</td><td style="background:hsl(74.28571428571428 70% 84%)">7</td><td style="background:hsl(37.14285714285714 70% 88%)">5</td><td class="tot">6.7</td><td><span class="chip out">OUT</span></td></tr><tr><td class="who"><svg viewBox="0 0 200 200" width="34" height="34" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vikram Sethi">
+  <defs><linearGradient id="g-vikram-r7gja" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#446471"/><stop offset="1" stop-color="#032330"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#032330"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-vikram-r7gja)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#032330"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#032330"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#e9c46a"/><path d="M76 170 L100 200 L124 170 L112 168 L100 186 L88 168 Z" fill="#fff"/><path d="M96 178 L104 178 L106 200 L94 200 Z" fill="#e9c46a"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><span><b>Vikram Sethi</b><small>The Valuation Hawk</small></span></td><td style="background:hsl(111.42857142857142 70% 80%)">9</td><td style="background:hsl(92.85714285714286 70% 82%)">8</td><td style="background:hsl(92.85714285714286 70% 82%)">8</td><td style="background:hsl(55.71428571428571 70% 86%)">6</td><td style="background:hsl(74.28571428571428 70% 84%)">7</td><td style="background:hsl(74.28571428571428 70% 84%)">7</td><td class="tot">7.6</td><td><span class="chip in">IN</span></td></tr><tr><td class="who"><svg viewBox="0 0 200 200" width="34" height="34" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dr. Meera Kapoor">
+  <defs><linearGradient id="g-meera-og3er" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#994add"/><stop offset="1" stop-color="#58099c"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#58099c"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-meera-og3er)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#58099c"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#58099c"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#ffd166"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <rect x="54" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><rect x="110" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><path d="M90 98 Q100 92 110 98" stroke="#ffd166" stroke-width="4" fill="none"/>
+</svg><span><b>Dr. Meera Kapoor</b><small>The Pharma CFO</small></span></td><td style="background:hsl(111.42857142857142 70% 80%)">9</td><td style="background:hsl(92.85714285714286 70% 82%)">8</td><td style="background:hsl(74.28571428571428 70% 84%)">7</td><td style="background:hsl(55.71428571428571 70% 86%)">6</td><td style="background:hsl(92.85714285714286 70% 82%)">8</td><td style="background:hsl(55.71428571428571 70% 86%)">6</td><td class="tot">7.4</td><td><span class="chip in">IN</span></td></tr><tr><td class="who"><svg viewBox="0 0 200 200" width="34" height="34" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rohan Bhatia">
+  <defs><linearGradient id="g-rohan-2svjy" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1ed2f6"/><stop offset="1" stop-color="#0091b5"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#0091b5"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-rohan-2svjy)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#0091b5"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#0091b5"/>
+  <path d="M20 200 C 26 170, 60 160, 100 162 C 140 160, 174 170, 180 200 Z" fill="#03045e"/><path d="M60 166 Q100 188 140 166" stroke="#2b2c86" stroke-width="6" fill="none"/><line x1="90" y1="178" x2="88" y2="198" stroke="#fff" stroke-width="3"/><line x1="110" y1="178" x2="112" y2="198" stroke="#fff" stroke-width="3"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><span><b>Rohan Bhatia</b><small>The Tech Visionary</small></span></td><td style="background:hsl(111.42857142857142 70% 80%)">9</td><td style="background:hsl(111.42857142857142 70% 80%)">9</td><td style="background:hsl(111.42857142857142 70% 80%)">9</td><td style="background:hsl(55.71428571428571 70% 86%)">6</td><td style="background:hsl(74.28571428571428 70% 84%)">7</td><td style="background:hsl(92.85714285714286 70% 82%)">8</td><td class="tot">8.2</td><td><span class="chip in">IN</span></td></tr></table></div></div>
+<div class="fbs"><div class="fb"><div class="fbh"><svg viewBox="0 0 200 200" width="52" height="52" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kabir Malhotra">
+  <defs><linearGradient id="g-kabir-e4yai" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8953"/><stop offset="1" stop-color="#dc4812"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#dc4812"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-kabir-e4yai)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#dc4812"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#dc4812"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#1b1b1b"/>
+  <path d="M58 78 Q72 84 88 86" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M112 86 Q128 84 142 78" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M72 144 Q100 140 128 144" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M34 112 C 30 40, 170 40, 166 112" stroke="#14213d" stroke-width="9" fill="none"/><rect x="22" y="98" width="22" height="36" rx="9" fill="#ff006e"/><rect x="156" y="98" width="22" height="36" rx="9" fill="#ff006e"/>
+</svg><div><b style="color:#ff6b35">Kabir Malhotra</b><small>The D2C Hype Captain · 7.0/10</small></div><span class="chip out">OUT</span></div><blockquote>Neha, you're a superstar seller, but enterprise deals with six-month cycles are not my playground. I can't add value here. For that reason, I'm out.</blockquote><p>Strong founder voice. Sales motion is founder-led and slow; hire sellers before you scale marketing.</p><div class="sc2"><div><h5>Liked</h5><ul><li>Founder sells with lived credibility</li><li>Clear billboard line</li></ul></div><div><h5>Worried about</h5><ul><li>4-6 month sales cycle</li><li>No repeatable sales engine yet</li></ul></div></div></div><div class="fb"><div class="fbh"><svg viewBox="0 0 200 200" width="52" height="52" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ananya Iyer">
+  <defs><linearGradient id="g-ananya-44l6v" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5764"/><stop offset="1" stop-color="#c31623"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#c31623"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-ananya-44l6v)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#c31623" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#c31623" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#c31623"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#c31623"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#f1faee"/>
+  <path d="M58 78 Q72 84 88 86" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M112 86 Q128 84 142 78" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M72 144 Q100 140 128 144" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="34" cy="132" r="7" fill="none" stroke="#ffd166" stroke-width="3.5"/><circle cx="166" cy="132" r="7" fill="none" stroke="#ffd166" stroke-width="3.5"/>
+</svg><div><b style="color:#e63946">Ananya Iyer</b><small>The Bootstrapped Brand Builder · 6.7/10</small></div><span class="chip out">OUT</span></div><blockquote>Your numbers are the cleanest I've seen this week, and I mean that. But the whale risk is real and I don't know this category well enough to fight it with you. I'm out, but I'm rooting for you.</blockquote><p>Numbers are consistent across every answer. Defensibility against bureau and LOS players needs a sharper story than speed.</p><div class="sc2"><div><h5>Liked</h5><ul><li>Every number reconciled</li><li>Honest about the third pilot</li></ul></div><div><h5>Worried about</h5><ul><li>Incumbent bundling risk</li><li>Moat is mostly data, still early</li></ul></div></div></div><div class="fb"><div class="fbh"><svg viewBox="0 0 200 200" width="52" height="52" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vikram Sethi">
+  <defs><linearGradient id="g-vikram-u9kyl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#446471"/><stop offset="1" stop-color="#032330"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#032330"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-vikram-u9kyl)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#032330"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#032330"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#e9c46a"/><path d="M76 170 L100 200 L124 170 L112 168 L100 186 L88 168 Z" fill="#fff"/><path d="M96 178 L104 178 L106 200 L94 200 Z" fill="#e9c46a"/>
+  <path d="M58 80 Q72 72 86 80" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 80 Q128 72 142 80" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><div><b style="color:#264653">Vikram Sethi</b><small>The Valuation Hawk · 7.6/10</small></div><span class="chip in">IN</span></div><blockquote>Thirty-one times revenue is fantasy, and you know it. But you're a Level 2 founder: you told me what kills you before I asked. I'll make an offer, at a sane number.</blockquote><p>Founder-market fit is exceptional. Valuation is a market comp, not earned yet. Regulatory design is the hidden strength.</p><div class="sc2"><div><h5>Liked</h5><ul><li>Founder-market fit from 30,000 signed loans</li><li>Human-in-the-loop designed for RBI</li></ul></div><div><h5>Worried about</h5><ul><li>31x ARR</li><li>41% revenue concentration</li></ul></div></div></div><div class="fb"><div class="fbh"><svg viewBox="0 0 200 200" width="52" height="52" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dr. Meera Kapoor">
+  <defs><linearGradient id="g-meera-9imrc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#994add"/><stop offset="1" stop-color="#58099c"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#58099c"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-meera-9imrc)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#58099c"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#58099c"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#ffd166"/>
+  <path d="M58 80 Q72 72 86 80" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 80 Q128 72 142 80" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <rect x="54" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><rect x="110" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><path d="M90 98 Q100 92 110 98" stroke="#ffd166" stroke-width="4" fill="none"/>
+</svg><div><b style="color:#7b2cbf">Dr. Meera Kapoor</b><small>The Pharma CFO · 7.4/10</small></div><span class="chip in">IN</span></div><blockquote>78% gross margin, no rounding, and a CA could not trip you once. The concentration scares me, but I'd rather fix that with you than watch someone else do it. I'm in.</blockquote><p>Economics are healthy for a seed SaaS. The 41% single-customer concentration is the number to kill in the next two quarters.</p><div class="sc2"><div><h5>Liked</h5><ul><li>78% gross margin</li><li>Burn and runway stated to the lakh</li></ul></div><div><h5>Worried about</h5><ul><li>41% concentration</li><li>Long sales cycle stretches runway</li></ul></div></div></div><div class="fb"><div class="fbh"><svg viewBox="0 0 200 200" width="52" height="52" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rohan Bhatia">
+  <defs><linearGradient id="g-rohan-ikvuq" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1ed2f6"/><stop offset="1" stop-color="#0091b5"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#0091b5"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-rohan-ikvuq)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#0091b5"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#0091b5"/>
+  <path d="M20 200 C 26 170, 60 160, 100 162 C 140 160, 174 170, 180 200 Z" fill="#03045e"/><path d="M60 166 Q100 188 140 166" stroke="#2b2c86" stroke-width="6" fill="none"/><line x1="90" y1="178" x2="88" y2="198" stroke="#fff" stroke-width="3"/><line x1="110" y1="178" x2="112" y2="198" stroke="#fff" stroke-width="3"/>
+  <path d="M58 80 Q72 72 86 80" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 80 Q128 72 142 80" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><div><b style="color:#00b4d8">Rohan Bhatia</b><small>The Tech Visionary · 8.2/10</small></div><span class="chip in">IN</span></div><blockquote>Eleven thousand labelled credit files and source-linked memos. This is real technology built for Bharat. I want in, and I want enough of it to matter.</blockquote><p>The labelled fraud dataset and source-linking layer are a genuine technical moat. Productise lender onboarding fast.</p><div class="sc2"><div><h5>Liked</h5><ul><li>Proprietary labelled data</li><li>Explainable, source-linked output</li></ul></div><div><h5>Worried about</h5><ul><li>Two weeks custom mapping per lender</li><li>Small team for enterprise demand</li></ul></div></div></div></div></section>
+
+<section id="grill"><h2>The grilling</h2><p class="sub">Every question, every answer, every aside.</p><h3 class="rt">Round 1 · The Grilling</h3><div class="ln q"><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vikram Sethi">
+  <defs><linearGradient id="g-vikram-99o78" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#446471"/><stop offset="1" stop-color="#032330"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#032330"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-vikram-99o78)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#032330"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#032330"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#e9c46a"/><path d="M76 170 L100 200 L124 170 L112 168 L100 186 L88 168 Z" fill="#fff"/><path d="M96 178 L104 178 L106 200 L94 200 Z" fill="#e9c46a"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><div><b>Vikram Sethi</b><span class="tg">question</span><p>₹1.5 crore for 2%. That is ₹75 crore on ₹2.4 crore ARR. Thirty-one times revenue. How did you arrive at this number? Walk me through it.</p></div></div><div class="ln a "><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Founder">
+  <path d="M150 100 L196 64 L188 100 L196 136 Z" fill="#e16100"/>
+  <ellipse cx="96" cy="100" rx="68" ry="54" fill="#ff7f11"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#fff" stroke-width="16" fill="none"/>
+  <path d="M120 52 Q128 100 120 148" stroke="#fff" stroke-width="14" fill="none"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#14213d" stroke-width="2" fill="none" transform="translate(-8 0)"/>
+  <path d="M84 46 Q100 20 118 50 Z" fill="#e66600"/>
+  <circle cx="52" cy="90" r="12" fill="#fff"/><circle cx="50" cy="92" r="6" fill="#14213d"/><circle cx="48" cy="89" r="2" fill="#fff"/>
+  <path d="M36 118 Q46 128 56 118" stroke="#14213d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="8" y="128" width="8" height="40" rx="3" fill="#333"/><circle cx="12" cy="124" r="9" fill="#555"/>
+  <rect x="46" y="160" width="100" height="26" rx="13" fill="#ffffff" opacity=".92"/><text x="96" y="178" font-family="Arial, sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#14213d">FOUNDER AI</text>
+</svg><div><b>Neha &amp; Arjun</b><span class="tg">founder agent</span><p>We looked at the last three Indian lending-infra rounds, which priced at 25 to 40 times ARR, and we are growing 18% month on month. But I'll be honest: it is a market comp, not a cash-flow valuation.</p></div></div><div class="ln r"><svg viewBox="0 0 200 200" width="28" height="28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vikram Sethi">
+  <defs><linearGradient id="g-vikram-9f3nk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#446471"/><stop offset="1" stop-color="#032330"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#032330"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-vikram-9f3nk)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#032330"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#032330"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#e9c46a"/><path d="M76 170 L100 200 L124 170 L112 168 L100 186 L88 168 Z" fill="#fff"/><path d="M96 178 L104 178 L106 200 L94 200 Z" fill="#e9c46a"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><div><p>At least you admit it. Most people in that chair tell me it came from a Bain report.</p></div></div><div class="ln q"><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dr. Meera Kapoor">
+  <defs><linearGradient id="g-meera-bcsb7" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#994add"/><stop offset="1" stop-color="#58099c"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#58099c"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-meera-bcsb7)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#58099c"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#58099c"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#ffd166"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <rect x="54" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><rect x="110" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><path d="M90 98 Q100 92 110 98" stroke="#ffd166" stroke-width="4" fill="none"/>
+</svg><div><b>Dr. Meera Kapoor</b><span class="tg">question</span><p>Take me from ₹2.4 crore ARR to EBITDA. What is the burn, and how many months do you have?</p></div></div><div class="ln a "><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Founder">
+  <path d="M150 100 L196 64 L188 100 L196 136 Z" fill="#e16100"/>
+  <ellipse cx="96" cy="100" rx="68" ry="54" fill="#ff7f11"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#fff" stroke-width="16" fill="none"/>
+  <path d="M120 52 Q128 100 120 148" stroke="#fff" stroke-width="14" fill="none"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#14213d" stroke-width="2" fill="none" transform="translate(-8 0)"/>
+  <path d="M84 46 Q100 20 118 50 Z" fill="#e66600"/>
+  <circle cx="52" cy="90" r="12" fill="#fff"/><circle cx="50" cy="92" r="6" fill="#14213d"/><circle cx="48" cy="89" r="2" fill="#fff"/>
+  <path d="M36 118 Q46 128 56 118" stroke="#14213d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="8" y="128" width="8" height="40" rx="3" fill="#333"/><circle cx="12" cy="124" r="9" fill="#555"/>
+  <rect x="46" y="160" width="100" height="26" rx="13" fill="#ffffff" opacity=".92"/><text x="96" y="178" font-family="Arial, sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#14213d">FOUNDER AI</text>
+</svg><div><b>Neha &amp; Arjun</b><span class="tg">founder agent</span><p>Gross margin is 78% after cloud and model costs. We burn ₹28 lakh a month, mostly salaries for a team of 14. Nine months of runway without this round, eighteen with it.</p></div></div><div class="ln r"><svg viewBox="0 0 200 200" width="28" height="28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dr. Meera Kapoor">
+  <defs><linearGradient id="g-meera-svfjc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#994add"/><stop offset="1" stop-color="#58099c"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#58099c"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-meera-svfjc)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#58099c"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#58099c"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#ffd166"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <rect x="54" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><rect x="110" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><path d="M90 98 Q100 92 110 98" stroke="#ffd166" stroke-width="4" fill="none"/>
+</svg><div><p>Okay. Clean answer. I like that you didn't round it.</p></div></div><div class="ln q"><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rohan Bhatia">
+  <defs><linearGradient id="g-rohan-67ha0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1ed2f6"/><stop offset="1" stop-color="#0091b5"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#0091b5"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-rohan-67ha0)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#0091b5"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#0091b5"/>
+  <path d="M20 200 C 26 170, 60 160, 100 162 C 140 160, 174 170, 180 200 Z" fill="#03045e"/><path d="M60 166 Q100 188 140 166" stroke="#2b2c86" stroke-width="6" fill="none"/><line x1="90" y1="178" x2="88" y2="198" stroke="#fff" stroke-width="3"/><line x1="110" y1="178" x2="112" y2="198" stroke="#fff" stroke-width="3"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><div><b>Rohan Bhatia</b><span class="tg">question</span><p>Everyone says 'AI-powered'. What part of this did your team build, and what is an off-the-shelf model with a prompt?</p></div></div><div class="ln a "><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Founder">
+  <path d="M150 100 L196 64 L188 100 L196 136 Z" fill="#e16100"/>
+  <ellipse cx="96" cy="100" rx="68" ry="54" fill="#ff7f11"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#fff" stroke-width="16" fill="none"/>
+  <path d="M120 52 Q128 100 120 148" stroke="#fff" stroke-width="14" fill="none"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#14213d" stroke-width="2" fill="none" transform="translate(-8 0)"/>
+  <path d="M84 46 Q100 20 118 50 Z" fill="#e66600"/>
+  <circle cx="52" cy="90" r="12" fill="#fff"/><circle cx="50" cy="92" r="6" fill="#14213d"/><circle cx="48" cy="89" r="2" fill="#fff"/>
+  <path d="M36 118 Q46 128 56 118" stroke="#14213d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="8" y="128" width="8" height="40" rx="3" fill="#333"/><circle cx="12" cy="124" r="9" fill="#555"/>
+  <rect x="46" y="160" width="100" height="26" rx="13" fill="#ffffff" opacity=".92"/><text x="96" y="178" font-family="Arial, sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#14213d">FOUNDER AI</text>
+</svg><div><b>Neha &amp; Arjun</b><span class="tg">founder agent</span><p>The OCR and the LLM summariser are open models we fine-tuned. What we built is the fraud-pattern engine trained on 11,400 labelled files, and the source-linking layer that ties every memo number to a page. That data is ours and gets better with every file.</p></div></div><div class="ln r"><svg viewBox="0 0 200 200" width="28" height="28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rohan Bhatia">
+  <defs><linearGradient id="g-rohan-1p1pf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1ed2f6"/><stop offset="1" stop-color="#0091b5"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#0091b5"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-rohan-1p1pf)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#0091b5"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#0091b5"/>
+  <path d="M20 200 C 26 170, 60 160, 100 162 C 140 160, 174 170, 180 200 Z" fill="#03045e"/><path d="M60 166 Q100 188 140 166" stroke="#2b2c86" stroke-width="6" fill="none"/><line x1="90" y1="178" x2="88" y2="198" stroke="#fff" stroke-width="3"/><line x1="110" y1="178" x2="112" y2="198" stroke="#fff" stroke-width="3"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><div><p>Labelled credit files. Now that is a moat if you can keep it.</p></div></div><div class="ln banter"><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kabir Malhotra">
+  <defs><linearGradient id="g-kabir-m3z1n" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8953"/><stop offset="1" stop-color="#dc4812"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#dc4812"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-kabir-m3z1n)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#dc4812"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#dc4812"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#1b1b1b"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <path d="M34 112 C 30 40, 170 40, 166 112" stroke="#14213d" stroke-width="9" fill="none"/><rect x="22" y="98" width="22" height="36" rx="9" fill="#ff006e"/><rect x="156" y="98" width="22" height="36" rx="9" fill="#ff006e"/>
+</svg><div><b>Kabir Malhotra</b><span class="tg">banter → Vikram</span><p>Vikram, B2B SaaS mein bhi tum valuation pe atak gaye? Inke paas 78% margin hai bhai, meri headphones mein itna nahi hai.</p></div></div><div class="ln q"><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kabir Malhotra">
+  <defs><linearGradient id="g-kabir-c2ojc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8953"/><stop offset="1" stop-color="#dc4812"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#dc4812"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-kabir-c2ojc)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#dc4812"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#dc4812"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#1b1b1b"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <path d="M34 112 C 30 40, 170 40, 166 112" stroke="#14213d" stroke-width="9" fill="none"/><rect x="22" y="98" width="22" height="36" rx="9" fill="#ff006e"/><rect x="156" y="98" width="22" height="36" rx="9" fill="#ff006e"/>
+</svg><div><b>Kabir Malhotra</b><span class="tg">question</span><p>My question is simple. How do you sell? Who is knocking on NBFC doors, and how long does one deal take to close?</p></div></div><div class="ln a "><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Founder">
+  <path d="M150 100 L196 64 L188 100 L196 136 Z" fill="#e16100"/>
+  <ellipse cx="96" cy="100" rx="68" ry="54" fill="#ff7f11"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#fff" stroke-width="16" fill="none"/>
+  <path d="M120 52 Q128 100 120 148" stroke="#fff" stroke-width="14" fill="none"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#14213d" stroke-width="2" fill="none" transform="translate(-8 0)"/>
+  <path d="M84 46 Q100 20 118 50 Z" fill="#e66600"/>
+  <circle cx="52" cy="90" r="12" fill="#fff"/><circle cx="50" cy="92" r="6" fill="#14213d"/><circle cx="48" cy="89" r="2" fill="#fff"/>
+  <path d="M36 118 Q46 128 56 118" stroke="#14213d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="8" y="128" width="8" height="40" rx="3" fill="#333"/><circle cx="12" cy="124" r="9" fill="#555"/>
+  <rect x="46" y="160" width="100" height="26" rx="13" fill="#ffffff" opacity=".92"/><text x="96" y="178" font-family="Arial, sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#14213d">FOUNDER AI</text>
+</svg><div><b>Neha &amp; Arjun</b><span class="tg">founder agent</span><p>Right now it is me. I know the credit heads personally. A deal takes 4 to 6 months: one month pilot, two months security review, then procurement. We want to hire two enterprise sellers with this money.</p></div></div><div class="ln r"><svg viewBox="0 0 200 200" width="28" height="28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kabir Malhotra">
+  <defs><linearGradient id="g-kabir-wsee9" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8953"/><stop offset="1" stop-color="#dc4812"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#dc4812"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-kabir-wsee9)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#dc4812"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#dc4812"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#1b1b1b"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <path d="M34 112 C 30 40, 170 40, 166 112" stroke="#14213d" stroke-width="9" fill="none"/><rect x="22" y="98" width="22" height="36" rx="9" fill="#ff006e"/><rect x="156" y="98" width="22" height="36" rx="9" fill="#ff006e"/>
+</svg><div><p>Four to six months per deal. Yaar, I sell 50,000 units in a weekend sale.</p></div></div><div class="ln q"><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ananya Iyer">
+  <defs><linearGradient id="g-ananya-74ru8" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5764"/><stop offset="1" stop-color="#c31623"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#c31623"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-ananya-74ru8)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#c31623" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#c31623" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#c31623"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#c31623"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#f1faee"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <circle cx="34" cy="132" r="7" fill="none" stroke="#ffd166" stroke-width="3.5"/><circle cx="166" cy="132" r="7" fill="none" stroke="#ffd166" stroke-width="3.5"/>
+</svg><div><b>Ananya Iyer</b><span class="tg">question</span><p>Your deck says 6 pilots, 3 paying, ₹6.7 lakh average a month. Three times 6.7 lakh times twelve is ₹2.4 crore. So the other three pilots pay nothing. When do they convert, and what happens if they don't?</p></div></div><div class="ln a "><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Founder">
+  <path d="M150 100 L196 64 L188 100 L196 136 Z" fill="#e16100"/>
+  <ellipse cx="96" cy="100" rx="68" ry="54" fill="#ff7f11"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#fff" stroke-width="16" fill="none"/>
+  <path d="M120 52 Q128 100 120 148" stroke="#fff" stroke-width="14" fill="none"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#14213d" stroke-width="2" fill="none" transform="translate(-8 0)"/>
+  <path d="M84 46 Q100 20 118 50 Z" fill="#e66600"/>
+  <circle cx="52" cy="90" r="12" fill="#fff"/><circle cx="50" cy="92" r="6" fill="#14213d"/><circle cx="48" cy="89" r="2" fill="#fff"/>
+  <path d="M36 118 Q46 128 56 118" stroke="#14213d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="8" y="128" width="8" height="40" rx="3" fill="#333"/><circle cx="12" cy="124" r="9" fill="#555"/>
+  <rect x="46" y="160" width="100" height="26" rx="13" fill="#ffffff" opacity=".92"/><text x="96" y="178" font-family="Arial, sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#14213d">FOUNDER AI</text>
+</svg><div><b>Neha &amp; Arjun</b><span class="tg">founder agent</span><p>Correct, the math is only the three paying lenders. Two of the free pilots have signed term sheets starting January. The third is a large NBFC that may build in-house, so I don't count it.</p></div></div><div class="ln r"><svg viewBox="0 0 200 200" width="28" height="28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ananya Iyer">
+  <defs><linearGradient id="g-ananya-7lz39" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5764"/><stop offset="1" stop-color="#c31623"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#c31623"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-ananya-7lz39)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#c31623" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#c31623" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#c31623"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#c31623"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#f1faee"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <circle cx="34" cy="132" r="7" fill="none" stroke="#ffd166" stroke-width="3.5"/><circle cx="166" cy="132" r="7" fill="none" stroke="#ffd166" stroke-width="3.5"/>
+</svg><div><p>Good. Your numbers add up. That already puts you ahead of half the people I meet.</p></div></div><h3 class="rt">Round 2 · Going for the Throat</h3><div class="ln q"><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vikram Sethi">
+  <defs><linearGradient id="g-vikram-qgwc0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#446471"/><stop offset="1" stop-color="#032330"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#032330"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-vikram-qgwc0)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#032330"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#032330"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#e9c46a"/><path d="M76 170 L100 200 L124 170 L112 168 L100 186 L88 168 Z" fill="#fff"/><path d="M96 178 L104 178 L106 200 L94 200 Z" fill="#e9c46a"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><div><b>Vikram Sethi</b><span class="tg">question</span><p>You are putting an AI inside a regulated credit decision. What happens the day RBI asks who is accountable for a bad loan that your memo recommended?</p></div></div><div class="ln a "><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Founder">
+  <path d="M150 100 L196 64 L188 100 L196 136 Z" fill="#e16100"/>
+  <ellipse cx="96" cy="100" rx="68" ry="54" fill="#ff7f11"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#fff" stroke-width="16" fill="none"/>
+  <path d="M120 52 Q128 100 120 148" stroke="#fff" stroke-width="14" fill="none"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#14213d" stroke-width="2" fill="none" transform="translate(-8 0)"/>
+  <path d="M84 46 Q100 20 118 50 Z" fill="#e66600"/>
+  <circle cx="52" cy="90" r="12" fill="#fff"/><circle cx="50" cy="92" r="6" fill="#14213d"/><circle cx="48" cy="89" r="2" fill="#fff"/>
+  <path d="M36 118 Q46 128 56 118" stroke="#14213d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="8" y="128" width="8" height="40" rx="3" fill="#333"/><circle cx="12" cy="124" r="9" fill="#555"/>
+  <rect x="46" y="160" width="100" height="26" rx="13" fill="#ffffff" opacity=".92"/><text x="96" y="178" font-family="Arial, sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#14213d">FOUNDER AI</text>
+</svg><div><b>Neha &amp; Arjun</b><span class="tg">founder agent</span><p>The analyst and the credit committee remain the decision makers. We never approve or reject a loan. Every memo has an audit trail, the model version, and a human sign-off. That is exactly why 25% of this round goes to a third-party model-risk audit.</p></div></div><div class="ln r"><svg viewBox="0 0 200 200" width="28" height="28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vikram Sethi">
+  <defs><linearGradient id="g-vikram-0vk88" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#446471"/><stop offset="1" stop-color="#032330"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#032330"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-vikram-0vk88)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#032330"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#032330"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#e9c46a"/><path d="M76 170 L100 200 L124 170 L112 168 L100 186 L88 168 Z" fill="#fff"/><path d="M96 178 L104 178 L106 200 L94 200 Z" fill="#e9c46a"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><div><p>Human-in-the-loop by design, not as an afterthought. Theek hai. That one I respect.</p></div></div><div class="ln q"><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ananya Iyer">
+  <defs><linearGradient id="g-ananya-lf6nh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5764"/><stop offset="1" stop-color="#c31623"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#c31623"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-ananya-lf6nh)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#c31623" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#c31623" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#c31623"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#c31623"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#f1faee"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <circle cx="34" cy="132" r="7" fill="none" stroke="#ffd166" stroke-width="3.5"/><circle cx="166" cy="132" r="7" fill="none" stroke="#ffd166" stroke-width="3.5"/>
+</svg><div><b>Ananya Iyer</b><span class="tg">question</span><p>What happens when a big LOS vendor or a credit bureau launches this as a free add-on?</p></div></div><div class="ln a "><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Founder">
+  <path d="M150 100 L196 64 L188 100 L196 136 Z" fill="#e16100"/>
+  <ellipse cx="96" cy="100" rx="68" ry="54" fill="#ff7f11"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#fff" stroke-width="16" fill="none"/>
+  <path d="M120 52 Q128 100 120 148" stroke="#fff" stroke-width="14" fill="none"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#14213d" stroke-width="2" fill="none" transform="translate(-8 0)"/>
+  <path d="M84 46 Q100 20 118 50 Z" fill="#e66600"/>
+  <circle cx="52" cy="90" r="12" fill="#fff"/><circle cx="50" cy="92" r="6" fill="#14213d"/><circle cx="48" cy="89" r="2" fill="#fff"/>
+  <path d="M36 118 Q46 128 56 118" stroke="#14213d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="8" y="128" width="8" height="40" rx="3" fill="#333"/><circle cx="12" cy="124" r="9" fill="#555"/>
+  <rect x="46" y="160" width="100" height="26" rx="13" fill="#ffffff" opacity=".92"/><text x="96" y="178" font-family="Arial, sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#14213d">FOUNDER AI</text>
+</svg><div><b>Neha &amp; Arjun</b><span class="tg">founder agent</span><p>They will try. Their incentive is to sell a 12-month platform, not a memo in 90 seconds. Our defence is speed and the labelled fraud data. And honestly, being acquired by one of them is a real outcome, not a failure.</p></div></div><div class="ln r"><svg viewBox="0 0 200 200" width="28" height="28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ananya Iyer">
+  <defs><linearGradient id="g-ananya-jii02" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5764"/><stop offset="1" stop-color="#c31623"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#c31623"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-ananya-jii02)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#c31623" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#c31623" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#c31623"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#c31623"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#f1faee"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <circle cx="34" cy="132" r="7" fill="none" stroke="#ffd166" stroke-width="3.5"/><circle cx="166" cy="132" r="7" fill="none" stroke="#ffd166" stroke-width="3.5"/>
+</svg><div><p>Honest. I don't love 'they are slow' as a moat, but you know the whale is there.</p></div></div><div class="ln banter"><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rohan Bhatia">
+  <defs><linearGradient id="g-rohan-y4ops" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1ed2f6"/><stop offset="1" stop-color="#0091b5"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#0091b5"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-rohan-y4ops)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#0091b5"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#0091b5"/>
+  <path d="M20 200 C 26 170, 60 160, 100 162 C 140 160, 174 170, 180 200 Z" fill="#03045e"/><path d="M60 166 Q100 188 140 166" stroke="#2b2c86" stroke-width="6" fill="none"/><line x1="90" y1="178" x2="88" y2="198" stroke="#fff" stroke-width="3"/><line x1="110" y1="178" x2="112" y2="198" stroke="#fff" stroke-width="3"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><div><b>Rohan Bhatia</b><span class="tg">banter → Meera</span><p>Meera, this is the first AI pitch this season where the founder actually knows what a model drift is.</p></div></div><div class="ln q"><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dr. Meera Kapoor">
+  <defs><linearGradient id="g-meera-j6swj" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#994add"/><stop offset="1" stop-color="#58099c"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#58099c"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-meera-j6swj)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#58099c"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#58099c"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#ffd166"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <rect x="54" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><rect x="110" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><path d="M90 98 Q100 92 110 98" stroke="#ffd166" stroke-width="4" fill="none"/>
+</svg><div><b>Dr. Meera Kapoor</b><span class="tg">question</span><p>Your single biggest customer. What percentage of revenue is it, and what if they walk?</p></div></div><div class="ln a "><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Founder">
+  <path d="M150 100 L196 64 L188 100 L196 136 Z" fill="#e16100"/>
+  <ellipse cx="96" cy="100" rx="68" ry="54" fill="#ff7f11"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#fff" stroke-width="16" fill="none"/>
+  <path d="M120 52 Q128 100 120 148" stroke="#fff" stroke-width="14" fill="none"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#14213d" stroke-width="2" fill="none" transform="translate(-8 0)"/>
+  <path d="M84 46 Q100 20 118 50 Z" fill="#e66600"/>
+  <circle cx="52" cy="90" r="12" fill="#fff"/><circle cx="50" cy="92" r="6" fill="#14213d"/><circle cx="48" cy="89" r="2" fill="#fff"/>
+  <path d="M36 118 Q46 128 56 118" stroke="#14213d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="8" y="128" width="8" height="40" rx="3" fill="#333"/><circle cx="12" cy="124" r="9" fill="#555"/>
+  <rect x="46" y="160" width="100" height="26" rx="13" fill="#ffffff" opacity=".92"/><text x="96" y="178" font-family="Arial, sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#14213d">FOUNDER AI</text>
+</svg><div><b>Neha &amp; Arjun</b><span class="tg">founder agent</span><p>41%. It is the NBFC where I used to work. If they walk we lose ₹1 crore of ARR, which is why the next twenty lenders matter more than this cheque.</p></div></div><div class="ln r"><svg viewBox="0 0 200 200" width="28" height="28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dr. Meera Kapoor">
+  <defs><linearGradient id="g-meera-v9ztm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#994add"/><stop offset="1" stop-color="#58099c"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#58099c"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-meera-v9ztm)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#58099c"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#58099c"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#ffd166"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <rect x="54" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><rect x="110" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><path d="M90 98 Q100 92 110 98" stroke="#ffd166" stroke-width="4" fill="none"/>
+</svg><div><p>Forty-one percent concentration. That is the number that keeps me up tonight, not the valuation.</p></div></div><div class="ln q"><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rohan Bhatia">
+  <defs><linearGradient id="g-rohan-yrmlg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1ed2f6"/><stop offset="1" stop-color="#0091b5"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#0091b5"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-rohan-yrmlg)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#0091b5"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#0091b5"/>
+  <path d="M20 200 C 26 170, 60 160, 100 162 C 140 160, 174 170, 180 200 Z" fill="#03045e"/><path d="M60 166 Q100 188 140 166" stroke="#2b2c86" stroke-width="6" fill="none"/><line x1="90" y1="178" x2="88" y2="198" stroke="#fff" stroke-width="3"/><line x1="110" y1="178" x2="112" y2="198" stroke="#fff" stroke-width="3"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><div><b>Rohan Bhatia</b><span class="tg">question</span><p>If I put you in front of ten NBFCs next month, can the product onboard them without Arjun writing custom code for each one?</p></div></div><div class="ln a "><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Founder">
+  <path d="M150 100 L196 64 L188 100 L196 136 Z" fill="#e16100"/>
+  <ellipse cx="96" cy="100" rx="68" ry="54" fill="#ff7f11"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#fff" stroke-width="16" fill="none"/>
+  <path d="M120 52 Q128 100 120 148" stroke="#fff" stroke-width="14" fill="none"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#14213d" stroke-width="2" fill="none" transform="translate(-8 0)"/>
+  <path d="M84 46 Q100 20 118 50 Z" fill="#e66600"/>
+  <circle cx="52" cy="90" r="12" fill="#fff"/><circle cx="50" cy="92" r="6" fill="#14213d"/><circle cx="48" cy="89" r="2" fill="#fff"/>
+  <path d="M36 118 Q46 128 56 118" stroke="#14213d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="8" y="128" width="8" height="40" rx="3" fill="#333"/><circle cx="12" cy="124" r="9" fill="#555"/>
+  <rect x="46" y="160" width="100" height="26" rx="13" fill="#ffffff" opacity=".92"/><text x="96" y="178" font-family="Arial, sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#14213d">FOUNDER AI</text>
+</svg><div><b>Neha &amp; Arjun</b><span class="tg">founder agent</span><p>Yes for statements and bureau, which is 80% of the memo. GST and bank-specific formats still need two weeks of mapping per lender. We are productising that next quarter.</p></div></div><div class="ln r"><svg viewBox="0 0 200 200" width="28" height="28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rohan Bhatia">
+  <defs><linearGradient id="g-rohan-9of8z" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1ed2f6"/><stop offset="1" stop-color="#0091b5"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#0091b5"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-rohan-9of8z)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#0091b5"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#0091b5"/>
+  <path d="M20 200 C 26 170, 60 160, 100 162 C 140 160, 174 170, 180 200 Z" fill="#03045e"/><path d="M60 166 Q100 188 140 166" stroke="#2b2c86" stroke-width="6" fill="none"/><line x1="90" y1="178" x2="88" y2="198" stroke="#fff" stroke-width="3"/><line x1="110" y1="178" x2="112" y2="198" stroke="#fff" stroke-width="3"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><div><p>Two weeks per lender I can live with. Custom code forever I cannot.</p></div></div><div class="ln q"><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kabir Malhotra">
+  <defs><linearGradient id="g-kabir-yaqoi" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8953"/><stop offset="1" stop-color="#dc4812"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#dc4812"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-kabir-yaqoi)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#dc4812"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#dc4812"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#1b1b1b"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <path d="M34 112 C 30 40, 170 40, 166 112" stroke="#14213d" stroke-width="9" fill="none"/><rect x="22" y="98" width="22" height="36" rx="9" fill="#ff006e"/><rect x="156" y="98" width="22" height="36" rx="9" fill="#ff006e"/>
+</svg><div><b>Kabir Malhotra</b><span class="tg">question</span><p>Last one. Ek line mein: why will a credit head who has done this manually for twenty years trust your machine?</p></div></div><div class="ln a "><svg viewBox="0 0 200 200" width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Founder">
+  <path d="M150 100 L196 64 L188 100 L196 136 Z" fill="#e16100"/>
+  <ellipse cx="96" cy="100" rx="68" ry="54" fill="#ff7f11"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#fff" stroke-width="16" fill="none"/>
+  <path d="M120 52 Q128 100 120 148" stroke="#fff" stroke-width="14" fill="none"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#14213d" stroke-width="2" fill="none" transform="translate(-8 0)"/>
+  <path d="M84 46 Q100 20 118 50 Z" fill="#e66600"/>
+  <circle cx="52" cy="90" r="12" fill="#fff"/><circle cx="50" cy="92" r="6" fill="#14213d"/><circle cx="48" cy="89" r="2" fill="#fff"/>
+  <path d="M36 118 Q46 128 56 118" stroke="#14213d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="8" y="128" width="8" height="40" rx="3" fill="#333"/><circle cx="12" cy="124" r="9" fill="#555"/>
+  <rect x="46" y="160" width="100" height="26" rx="13" fill="#ffffff" opacity=".92"/><text x="96" y="178" font-family="Arial, sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#14213d">FOUNDER AI</text>
+</svg><div><b>Neha &amp; Arjun</b><span class="tg">founder agent</span><p>Because I was that credit head. The machine doesn't ask for trust. It shows its work, page by page, and the analyst can overrule it in one click.</p></div></div><div class="ln r"><svg viewBox="0 0 200 200" width="28" height="28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kabir Malhotra">
+  <defs><linearGradient id="g-kabir-xr0yh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8953"/><stop offset="1" stop-color="#dc4812"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#dc4812"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-kabir-xr0yh)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#dc4812"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#dc4812"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#1b1b1b"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <path d="M34 112 C 30 40, 170 40, 166 112" stroke="#14213d" stroke-width="9" fill="none"/><rect x="22" y="98" width="22" height="36" rx="9" fill="#ff006e"/><rect x="156" y="98" width="22" height="36" rx="9" fill="#ff006e"/>
+</svg><div><p>Okay, that line I would put on a billboard.</p></div></div></section>
+
+<section id="offers"><h2>Offers &amp; negotiation</h2><p class="sub">Every number on the table, as an implied valuation.</p>
+<div class="card"><div class="bar"><span>Founder's ask</span><i><em style="width:100%;background:#9aa9bf"></em></i><b>₹75 Cr</b></div><div class="bar"><span>Rohan · offer</span><i><em style="width:33.33333333333333%;background:#2a6fdb"></em></i><b>₹25 Cr</b></div><div class="bar"><span>Vikram + Meera · offer</span><i><em style="width:28.57142857142857%;background:#2a6fdb"></em></i><b>₹21.43 Cr</b></div><div class="bar"><span>Rohan + Meera · founder counter</span><i><em style="width:44.44444444444445%;background:#ff8a1f"></em></i><b>₹33.33 Cr</b></div><div class="bar"><span>Rohan + Meera · shark counter</span><i><em style="width:40%;background:#2dbd8f"></em></i><b>₹30 Cr</b></div><div class="bar"><span>Final deal</span><i><em style="width:40%;background:#e8a400"></em></i><b>₹30 Cr</b></div></div>
+<div class="card" style="margin-top:14px;overflow-x:auto"><table><tr><th style="text-align:left">Shark</th><th>Terms</th><th>Valuation</th><th>Conditions</th></tr><tr><td><svg viewBox="0 0 200 200" width="30" height="30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rohan Bhatia">
+  <defs><linearGradient id="g-rohan-koqnb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1ed2f6"/><stop offset="1" stop-color="#0091b5"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#0091b5"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-rohan-koqnb)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#0091b5"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#0091b5"/>
+  <path d="M20 200 C 26 170, 60 160, 100 162 C 140 160, 174 170, 180 200 Z" fill="#03045e"/><path d="M60 166 Q100 188 140 166" stroke="#2b2c86" stroke-width="6" fill="none"/><line x1="90" y1="178" x2="88" y2="198" stroke="#fff" stroke-width="3"/><line x1="110" y1="178" x2="112" y2="198" stroke="#fff" stroke-width="3"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg> Rohan</td><td><b>₹1.5 Cr for 6%</b></td><td>₹25 Cr</td><td>Rohan joins as tech advisor; Board observer seat</td></tr><tr><td><svg viewBox="0 0 200 200" width="30" height="30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vikram Sethi">
+  <defs><linearGradient id="g-vikram-chsnx" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#446471"/><stop offset="1" stop-color="#032330"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#032330"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-vikram-chsnx)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#032330"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#032330"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#e9c46a"/><path d="M76 170 L100 200 L124 170 L112 168 L100 186 L88 168 Z" fill="#fff"/><path d="M96 178 L104 178 L106 200 L94 200 Z" fill="#e9c46a"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><svg viewBox="0 0 200 200" width="30" height="30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dr. Meera Kapoor">
+  <defs><linearGradient id="g-meera-xttd5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#994add"/><stop offset="1" stop-color="#58099c"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#58099c"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-meera-xttd5)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#58099c"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#58099c"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#ffd166"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <rect x="54" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><rect x="110" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><path d="M90 98 Q100 92 110 98" stroke="#ffd166" stroke-width="4" fill="none"/>
+</svg> Vikram + Meera</td><td><b>₹1.5 Cr for 7%</b></td><td>₹21.43 Cr</td><td>Model-risk audit completed within 6 months; Top customer below 30% of revenue in 12 months</td></tr></table></div>
+<div class="card" style="margin-top:14px"><h3>How it was negotiated</h3><ul class="nego"><li><svg viewBox="0 0 200 200" width="30" height="30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Founder">
+  <path d="M150 100 L196 64 L188 100 L196 136 Z" fill="#e16100"/>
+  <ellipse cx="96" cy="100" rx="68" ry="54" fill="#ff7f11"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#fff" stroke-width="16" fill="none"/>
+  <path d="M120 52 Q128 100 120 148" stroke="#fff" stroke-width="14" fill="none"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#14213d" stroke-width="2" fill="none" transform="translate(-8 0)"/>
+  <path d="M84 46 Q100 20 118 50 Z" fill="#e66600"/>
+  <circle cx="52" cy="90" r="12" fill="#fff"/><circle cx="50" cy="92" r="6" fill="#14213d"/><circle cx="48" cy="89" r="2" fill="#fff"/>
+  <path d="M36 118 Q46 128 56 118" stroke="#14213d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="8" y="128" width="8" height="40" rx="3" fill="#333"/><circle cx="12" cy="124" r="9" fill="#555"/>
+  <rect x="46" y="160" width="100" height="26" rx="13" fill="#ffffff" opacity=".92"/><text x="96" y="178" font-family="Arial, sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#14213d">FOUNDER AI</text>
+</svg><div><b>Neha &amp; Arjun</b> <span class="tg">counter</span><p>Thank you, both offers are generous. Our floor is ₹30 crore valuation. Rohan, Meera, would you come in together at ₹1.5 crore for 4.5%? One tech shark, one numbers shark. <em class="ot">₹1.5 Cr for 4.5%</em></p></div></li><li><svg viewBox="0 0 200 200" width="30" height="30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vikram Sethi">
+  <defs><linearGradient id="g-vikram-12r1k" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#446471"/><stop offset="1" stop-color="#032330"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#032330"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-vikram-12r1k)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#032330"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#032330"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#e9c46a"/><path d="M76 170 L100 200 L124 170 L112 168 L100 186 L88 168 Z" fill="#fff"/><path d="M96 178 L104 178 L106 200 L94 200 Z" fill="#e9c46a"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><div><b>Vikram Sethi</b> <span class="tg">banter</span><p>Wait, wait. You just cut me out of my own co-offer? Rohan, tumne kya jaadu kiya inpe?</p></div></li><li><svg viewBox="0 0 200 200" width="30" height="30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rohan Bhatia">
+  <defs><linearGradient id="g-rohan-z1im7" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1ed2f6"/><stop offset="1" stop-color="#0091b5"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#0091b5"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-rohan-z1im7)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#0091b5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#0091b5"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#0091b5"/>
+  <path d="M20 200 C 26 170, 60 160, 100 162 C 140 160, 174 170, 180 200 Z" fill="#03045e"/><path d="M60 166 Q100 188 140 166" stroke="#2b2c86" stroke-width="6" fill="none"/><line x1="90" y1="178" x2="88" y2="198" stroke="#fff" stroke-width="3"/><line x1="110" y1="178" x2="112" y2="198" stroke="#fff" stroke-width="3"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><div><b>Rohan Bhatia</b> <span class="tg">counter</span><p>I like the pairing. Meera keeps the numbers honest, I keep the tech sharp. 5%, ₹1.5 crore, with ₹50 lakh released when you cross ₹4 crore ARR. Final. <em class="ot">₹1.5 Cr for 5%</em></p></div></li><li><svg viewBox="0 0 200 200" width="30" height="30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dr. Meera Kapoor">
+  <defs><linearGradient id="g-meera-q48of" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#994add"/><stop offset="1" stop-color="#58099c"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#58099c"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-meera-q48of)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#58099c"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#58099c"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#ffd166"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <rect x="54" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><rect x="110" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><path d="M90 98 Q100 92 110 98" stroke="#ffd166" stroke-width="4" fill="none"/>
+</svg><div><b>Dr. Meera Kapoor</b> <span class="tg">accept</span><p>I'm good with five. And Neha, we fix that 41% together. Done from my side.</p></div></li><li><svg viewBox="0 0 200 200" width="30" height="30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Founder">
+  <path d="M150 100 L196 64 L188 100 L196 136 Z" fill="#e16100"/>
+  <ellipse cx="96" cy="100" rx="68" ry="54" fill="#ff7f11"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#fff" stroke-width="16" fill="none"/>
+  <path d="M120 52 Q128 100 120 148" stroke="#fff" stroke-width="14" fill="none"/>
+  <path d="M70 48 Q62 100 70 152" stroke="#14213d" stroke-width="2" fill="none" transform="translate(-8 0)"/>
+  <path d="M84 46 Q100 20 118 50 Z" fill="#e66600"/>
+  <circle cx="52" cy="90" r="12" fill="#fff"/><circle cx="50" cy="92" r="6" fill="#14213d"/><circle cx="48" cy="89" r="2" fill="#fff"/>
+  <path d="M36 118 Q46 128 56 118" stroke="#14213d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="8" y="128" width="8" height="40" rx="3" fill="#333"/><circle cx="12" cy="124" r="9" fill="#555"/>
+  <rect x="46" y="160" width="100" height="26" rx="13" fill="#ffffff" opacity=".92"/><text x="96" y="178" font-family="Arial, sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#14213d">FOUNDER AI</text>
+</svg><div><b>Neha &amp; Arjun</b> <span class="tg">accept</span><p>₹30 crore valuation, two sharks who open doors and audit us. Rohan, Meera: we have a deal.</p></div></li></ul></div></section>
+
+<section id="terms"><h2>The deal</h2><p class="sub">A plain summary of what was agreed in the Tank. On the show, as here, this is where due diligence begins.</p><div class="ts"><div class="tsh"><b>Summary of terms</b><span>Non-binding · simulated</span></div><table>
+<tr><th>Company</th><td>CreditPilot</td></tr>
+<tr><th>Investors</th><td>Rohan Bhatia, Dr. Meera Kapoor</td></tr>
+<tr><th>Investment</th><td>₹1.5 Cr</td></tr>
+<tr><th>Equity</th><td>5%</td></tr>
+<tr><th>Post-money valuation</th><td>₹30 Cr</td></tr>
+<tr><th>Versus the ask</th><td>₹75 Cr asked · -60%</td></tr>
+<tr><th>Conditions</th><td><ul><li>₹1 crore at close, ₹50 lakh at ₹4 crore ARR</li><li>Rohan as tech advisor</li><li>Concentration plan: top customer below 30% in 12 months</li></ul></td></tr>
+</table></div></section>
+
+<section id="doctor"><h2>The Pitch Doctor</h2><p class="sub">What to change before you pitch a real investor.</p>
+<div class="verdict">Fundable at ₹30 crore, not ₹75 crore. The founder story and the human-in-the-loop design won the room; concentration risk and a founder-only sales engine cost the valuation.</div>
+<div class="fixes"><div class="fix"><div class="fn">1</div><div><h4>Lead with the human-in-the-loop design</h4><p><b>Why:</b> The RBI accountability answer flipped the toughest shark. It came in Round 2; it should be on slide 3.</p><p><b>How:</b> Add one line under the solution slide: 'We never approve a loan. Every memo is signed by a human and carries a full audit trail.'</p></div></div><div class="fix"><div class="fn">2</div><div><h4>Kill the 41% concentration before the next raise</h4><p><b>Why:</b> Two sharks named it as the number that keeps them up. It is the single biggest discount on your valuation.</p><p><b>How:</b> Close the two signed January pilots and one new lender. Target: top customer under 30% of ARR within 12 months.</p></div></div><div class="fix"><div class="fn">3</div><div><h4>Replace the market comp with an earned valuation</h4><p><b>Why:</b> 31x ARR from 'other rounds' read as fantasy. Founders who explain their number keep more equity.</p><p><b>How:</b> Show net revenue retention, payback per lender and a 12-month ARR plan with named pipeline. Price off next-year ARR, not peers.</p></div></div><div class="fix"><div class="fn">4</div><div><h4>Turn sales into a machine, not a founder</h4><p><b>Why:</b> A 4-6 month cycle with one seller pushed the brand shark out.</p><p><b>How:</b> Productise a 30-day paid pilot with a fixed success metric (TAT and analyst hours saved), and hire one enterprise seller from an LOS vendor.</p></div></div><div class="fix"><div class="fn">5</div><div><h4>Name your moat as data, with a number</h4><p><b>Why:</b> 'They are slow' did not convince the competition hawk. '11,400 labelled credit files' did.</p><p><b>How:</b> Put the labelled-file count, its growth rate and the fraud-catch rate versus manual review on the competition slide.</p></div></div></div>
+<h3 class="rt">Objection bank</h3><p class="sub">Text in [brackets] is a fact only the founder can supply. Fill it in before you pitch.</p><div class="obj"><div class="oq"><svg viewBox="0 0 200 200" width="34" height="34" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vikram Sethi">
+  <defs><linearGradient id="g-vikram-d8oi7" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#446471"/><stop offset="1" stop-color="#032330"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#032330"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-vikram-d8oi7)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#032330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#032330"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#032330"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#e9c46a"/><path d="M76 170 L100 200 L124 170 L112 168 L100 186 L88 168 Z" fill="#fff"/><path d="M96 178 L104 178 L106 200 L94 200 Z" fill="#e9c46a"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  
+</svg><b>Thirty-one times revenue. How did you arrive at this number?</b></div><div class="ow"><div class="weak"><h5>What you said</h5><p>We looked at the last three lending-infra rounds.</p></div><div class="strong"><h5>Say this instead</h5><p>We price off next year, not peers: [next-year ARR target] backed by the two signed January term sheets and a named pipeline of [N] lenders. Here is the pipeline, lender by lender.</p></div></div></div><div class="obj"><div class="oq"><svg viewBox="0 0 200 200" width="34" height="34" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dr. Meera Kapoor">
+  <defs><linearGradient id="g-meera-73nya" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#994add"/><stop offset="1" stop-color="#58099c"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#58099c"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-meera-73nya)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#58099c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#58099c"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#58099c"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#ffd166"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <rect x="54" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><rect x="110" y="86" width="36" height="28" rx="10" fill="none" stroke="#ffd166" stroke-width="4.5"/><path d="M90 98 Q100 92 110 98" stroke="#ffd166" stroke-width="4" fill="none"/>
+</svg><b>What if your biggest customer walks?</b></div><div class="ow"><div class="weak"><h5>What you said</h5><p>We lose ₹1 crore of ARR.</p></div><div class="strong"><h5>Say this instead</h5><p>They are on a [contract term] contract with [notice period] notice, and our plan gets every lender under 30% of ARR within 12 months. Here is the plan, quarter by quarter.</p></div></div></div><div class="obj"><div class="oq"><svg viewBox="0 0 200 200" width="34" height="34" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ananya Iyer">
+  <defs><linearGradient id="g-ananya-5l98n" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5764"/><stop offset="1" stop-color="#c31623"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#c31623"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-ananya-5l98n)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#c31623" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#c31623" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#c31623"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#c31623"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#f1faee"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <circle cx="34" cy="132" r="7" fill="none" stroke="#ffd166" stroke-width="3.5"/><circle cx="166" cy="132" r="7" fill="none" stroke="#ffd166" stroke-width="3.5"/>
+</svg><b>What happens when a bureau or LOS vendor gives this away free?</b></div><div class="ow"><div class="weak"><h5>What you said</h5><p>They are slow and want to sell big platforms.</p></div><div class="strong"><h5>Say this instead</h5><p>Their free tool extracts data. Ours catches fraud with a model trained on 11,400 labelled credit files, at [catch rate]% above manual review. Bundling a spreadsheet does not bundle that.</p></div></div></div><div class="obj"><div class="oq"><svg viewBox="0 0 200 200" width="34" height="34" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kabir Malhotra">
+  <defs><linearGradient id="g-kabir-o9j77" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8953"/><stop offset="1" stop-color="#dc4812"/></linearGradient></defs>
+  <path d="M100 10 Q106 12 128 66 L72 66 Q92 20 100 10 Z" fill="#dc4812"/>
+  <path d="M30 178 C 22 110, 52 56, 100 54 C 148 56, 178 110, 170 178 Z" fill="url(#g-kabir-o9j77)"/>
+  
+  <path d="M60 178 C 62 140, 80 122, 100 122 C 120 122, 138 140, 140 178 Z" fill="#f4f1ea"/>
+  <path d="M40 118 q6 8 0 16 M46 116 q6 9 0 18 M52 116 q5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 118 q-6 8 0 16 M154 116 q-6 9 0 18 M148 116 q-5 8 0 16" stroke="#dc4812" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M26 176 q-16 4 -18 20 q16 -2 30 -10 Z" fill="#dc4812"/><path d="M174 176 q16 4 18 20 q-16 -2 -30 -10 Z" fill="#dc4812"/>
+  <path d="M24 200 C 30 178, 60 168, 100 168 C 140 168, 170 178, 176 200 Z" fill="#1b1b1b"/>
+  <path d="M58 82 Q72 76 86 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M114 82 Q128 76 142 82" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="72" cy="100" r="13" fill="#fff"/><circle cx="74" cy="102" r="6.5" fill="#14213d"/><circle cx="76.5" cy="99" r="2.2" fill="#fff"/><circle cx="128" cy="100" r="13" fill="#fff"/><circle cx="130" cy="102" r="6.5" fill="#14213d"/><circle cx="132.5" cy="99" r="2.2" fill="#fff"/>
+  <path d="M70 138 Q100 158 130 138" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M82 142 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M91 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M100 145 l4.5 6 l4.5 -6 Z" fill="#fff"/><path d="M109 142 l4.5 6 l4.5 -6 Z" fill="#fff"/>
+  <path d="M34 112 C 30 40, 170 40, 166 112" stroke="#14213d" stroke-width="9" fill="none"/><rect x="22" y="98" width="22" height="36" rx="9" fill="#ff006e"/><rect x="156" y="98" width="22" height="36" rx="9" fill="#ff006e"/>
+</svg><b>How do you sell, and how long does a deal take?</b></div><div class="ow"><div class="weak"><h5>What you said</h5><p>It's me, and it takes 4 to 6 months.</p></div><div class="strong"><h5>Say this instead</h5><p>A 30-day paid pilot with one fixed success metric. Five of our six pilots have either paid or signed. With one enterprise seller we target a [target] week cycle.</p></div></div></div>
+<div class="three"><div class="card"><h3>Bring these numbers</h3><ul><li>Net revenue retention per lender</li><li>Pilot-to-paid conversion rate</li><li>Fraud catch rate vs manual review</li><li>Analyst hours saved per 100 files</li><li>Named pipeline with stage and expected ARR</li><li>Customer concentration plan by quarter</li></ul></div><div class="card"><h3>Due-diligence checklist</h3><ul><li>Signed customer contracts and notice periods</li><li>Model-risk audit scope and vendor</li><li>Data processing agreements and data residency</li><li>Cap table and ESOP pool</li><li>Founder vesting schedule</li><li>Security review reports from pilot lenders</li></ul></div><div class="card"><h3>Next steps</h3><ul class="steps"><li><b>This week</b>Move the human-in-the-loop line onto the solution slide and rehearse the new valuation answer.</li><li><b>30 days</b>Close both January pilots as paid and appoint the model-risk auditor.</li><li><b>90 days</b>Hire one enterprise seller and launch the 30-day paid pilot package.</li></ul></div></div></section>
+</main>
+<footer>Generated by <b>SharkTank</b> for Claude Code. The sharks are fictional characters whose investing styles were researched from public reporting on Shark Tank India and Shark Tank USA (see the repo's research notes). They are not the real investors, do not speak for them, and nothing here is investment, legal or financial advice. Scores and offers are simulations to stress-test a pitch.</footer>
+<div id="present" onclick="next(1)"><div id="pslide"></div><div class="pc">← → to move · Esc to exit</div></div>
+<script>
+const S=[...document.querySelectorAll('.deck .slide')].map(s=>s.outerHTML);let i=0;
+function present(n){i=n;document.getElementById('present').classList.add('on');show();document.documentElement.requestFullscreen?.().catch(()=>{});}
+function show(){document.getElementById('pslide').innerHTML=S[i];}
+function next(d){i=Math.max(0,Math.min(S.length-1,i+d));show();}
+addEventListener('keydown',e=>{const p=document.getElementById('present');if(!p.classList.contains('on'))return;if(e.key==='ArrowRight'||e.key===' ')next(1);if(e.key==='ArrowLeft')next(-1);if(e.key==='Escape'){p.classList.remove('on');document.fullscreenElement&&document.exitFullscreen();}});
+document.querySelectorAll('.deck .slide').forEach((s,k)=>s.addEventListener('click',()=>present(k)));
+</script>
+</body></html>

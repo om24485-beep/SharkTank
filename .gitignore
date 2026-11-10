@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+.env
+/build/
+# your own episodes stay local; the examples ship with the repo
+/episodes/*
+!/episodes/.gitkeep
+!/episodes/2026-11-10-creditpilot-ai-underwriting/
+!/episodes/2026-11-10-snapsip-usa/

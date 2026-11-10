@@ -1,0 +1,17 @@
+{ "verdicts": [
+  { "shark": "dana", "status": "out", "scores": { "team": 8, "market": 6, "product": 7, "traction": 6, "economics": 6, "moat": 4 },
+    "line": "Maya, you're a hustler and the product works. But half your sales are rented from Amazon ads and there's no moat until that patent issues. It's a great small business, not a venture deal. I'm out.",
+    "feedback": "Ad dependence and pending IP make this a lifestyle-scale business today.", "strengths": ["Founder sells hard", "Honest about ad dependence"], "concerns": ["22% of revenue on ads", "Patent not granted"] },
+  { "shark": "marcus", "status": "out", "scores": { "team": 8, "market": 6, "product": 7, "traction": 6, "economics": 7, "moat": 4 },
+    "line": "I love Jess. I love the story. But this is a gadget, sister, not a brand people wear. I can't add enough here to earn my piece. I'm out.",
+    "feedback": "Strong customer persona, but no community or identity yet.", "strengths": ["Vivid customer persona", "Great demo"], "concerns": ["Gadget, not a brand", "No community"] },
+  { "shark": "rosa", "status": "in", "scores": { "team": 9, "market": 6, "product": 7, "traction": 6, "economics": 7, "moat": 4 },
+    "line": "The Coke on the desk? That's the whole pitch right there. I'm not a gadget girl, but I'll bet on a woman who closes on the ninth visit. I've got an offer.",
+    "feedback": "Founder grit is the asset. Retail chains respond to the demo.", "strengths": ["Ninth-visit hustle", "Demo sells itself"], "concerns": ["Category outside her lane", "Small profit"] },
+  { "shark": "victor", "status": "in", "scores": { "team": 7, "market": 6, "product": 7, "traction": 7, "economics": 8, "moat": 4 },
+    "line": "Two-ten to make, fifteen to sell. Those margins make me emotional, and I don't do emotional. Here's how this works.",
+    "feedback": "Excellent unit margin; valuation should follow profit, not hope.", "strengths": ["86% gross margin", "Proven sell-through"], "concerns": ["Valuation 6x sales", "Profit only $38k"] },
+  { "shark": "lena", "status": "in", "scores": { "team": 8, "market": 7, "product": 8, "traction": 7, "economics": 8, "moat": 5 },
+    "line": "In ten seconds I knew. That flip test is a hero. Fifty thousand units in six weeks, patent pending, and a founder who tells me the truth. I want to make an offer.",
+    "feedback": "A demonstrable, retail-ready hero product; IP needs finishing.", "strengths": ["Perfect demo moment", "Supply chain ready"], "concerns": ["Patent pending", "Knock-off risk"] }
+] }

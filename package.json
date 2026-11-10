@@ -1,0 +1,15 @@
+{
+  "name": "sharktank",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shark Tank in Claude Code: a founder agent pitches your idea or project to a panel of AI sharks (researched from Shark Tank India and USA investing styles), who grill it, score it, make offers and negotiate, live in a local room, ending in a pitch-ready HTML report.",
+  "type": "module",
+  "scripts": {
+    "start": "node app/server.mjs",
+    "report": "node app/scripts/build-report.mjs",
+    "agents": "node app/scripts/gen-agents.mjs",
+    "smoke": "node app/scripts/smoke.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}

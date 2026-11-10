@@ -1,0 +1,28 @@
+{
+  "rounds": [
+    {
+      "title": "Round 1 · The Grilling",
+      "sub": "Every shark gets a question",
+      "exchanges": [
+        { "id": "r1x1", "shark": "vikram", "q": "₹1.5 crore for 2%. That is ₹75 crore on ₹2.4 crore ARR. Thirty-one times revenue. How did you arrive at this number? Walk me through it.", "a": "We looked at the last three Indian lending-infra rounds, which priced at 25 to 40 times ARR, and we are growing 18% month on month. But I'll be honest: it is a market comp, not a cash-flow valuation.", "by": "agent", "react": "At least you admit it. Most people in that chair tell me it came from a Bain report." },
+        { "id": "r1x2", "shark": "meera", "q": "Take me from ₹2.4 crore ARR to EBITDA. What is the burn, and how many months do you have?", "a": "Gross margin is 78% after cloud and model costs. We burn ₹28 lakh a month, mostly salaries for a team of 14. Nine months of runway without this round, eighteen with it.", "by": "agent", "react": "Okay. Clean answer. I like that you didn't round it." },
+        { "id": "r1x3", "shark": "rohan", "q": "Everyone says 'AI-powered'. What part of this did your team build, and what is an off-the-shelf model with a prompt?", "a": "The OCR and the LLM summariser are open models we fine-tuned. What we built is the fraud-pattern engine trained on 11,400 labelled files, and the source-linking layer that ties every memo number to a page. That data is ours and gets better with every file.", "by": "agent", "react": "Labelled credit files. Now that is a moat if you can keep it." },
+        { "id": "r1x4", "shark": "kabir", "to": "vikram", "banter": "Vikram, B2B SaaS mein bhi tum valuation pe atak gaye? Inke paas 78% margin hai bhai, meri headphones mein itna nahi hai." },
+        { "id": "r1x5", "shark": "kabir", "q": "My question is simple. How do you sell? Who is knocking on NBFC doors, and how long does one deal take to close?", "a": "Right now it is me. I know the credit heads personally. A deal takes 4 to 6 months: one month pilot, two months security review, then procurement. We want to hire two enterprise sellers with this money.", "by": "agent", "react": "Four to six months per deal. Yaar, I sell 50,000 units in a weekend sale." },
+        { "id": "r1x6", "shark": "ananya", "q": "Your deck says 6 pilots, 3 paying, ₹6.7 lakh average a month. Three times 6.7 lakh times twelve is ₹2.4 crore. So the other three pilots pay nothing. When do they convert, and what happens if they don't?", "a": "Correct, the math is only the three paying lenders. Two of the free pilots have signed term sheets starting January. The third is a large NBFC that may build in-house, so I don't count it.", "by": "agent", "react": "Good. Your numbers add up. That already puts you ahead of half the people I meet." }
+      ]
+    },
+    {
+      "title": "Round 2 · Going for the Throat",
+      "sub": "Follow-ups on the weakest answers",
+      "exchanges": [
+        { "id": "r2x1", "shark": "vikram", "q": "You are putting an AI inside a regulated credit decision. What happens the day RBI asks who is accountable for a bad loan that your memo recommended?", "a": "The analyst and the credit committee remain the decision makers. We never approve or reject a loan. Every memo has an audit trail, the model version, and a human sign-off. That is exactly why 25% of this round goes to a third-party model-risk audit.", "by": "agent", "react": "Human-in-the-loop by design, not as an afterthought. Theek hai. That one I respect." },
+        { "id": "r2x2", "shark": "ananya", "q": "What happens when a big LOS vendor or a credit bureau launches this as a free add-on?", "a": "They will try. Their incentive is to sell a 12-month platform, not a memo in 90 seconds. Our defence is speed and the labelled fraud data. And honestly, being acquired by one of them is a real outcome, not a failure.", "by": "agent", "react": "Honest. I don't love 'they are slow' as a moat, but you know the whale is there." },
+        { "id": "r2x3", "shark": "rohan", "to": "meera", "banter": "Meera, this is the first AI pitch this season where the founder actually knows what a model drift is." },
+        { "id": "r2x4", "shark": "meera", "q": "Your single biggest customer. What percentage of revenue is it, and what if they walk?", "a": "41%. It is the NBFC where I used to work. If they walk we lose ₹1 crore of ARR, which is why the next twenty lenders matter more than this cheque.", "by": "agent", "react": "Forty-one percent concentration. That is the number that keeps me up tonight, not the valuation." },
+        { "id": "r2x5", "shark": "rohan", "q": "If I put you in front of ten NBFCs next month, can the product onboard them without Arjun writing custom code for each one?", "a": "Yes for statements and bureau, which is 80% of the memo. GST and bank-specific formats still need two weeks of mapping per lender. We are productising that next quarter.", "by": "agent", "react": "Two weeks per lender I can live with. Custom code forever I cannot." },
+        { "id": "r2x6", "shark": "kabir", "q": "Last one. Ek line mein: why will a credit head who has done this manually for twenty years trust your machine?", "a": "Because I was that credit head. The machine doesn't ask for trust. It shows its work, page by page, and the analyst can overrule it in one click.", "by": "agent", "react": "Okay, that line I would put on a billboard." }
+      ]
+    }
+  ]
+}

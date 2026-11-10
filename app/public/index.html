@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Tank · AI Shark Tank</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦈</text></svg>">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="caustics" aria-hidden="true"></div>
+<header class="bar">
+  <div class="brand"><span class="fin">🦈</span><span class="word">THE&nbsp;TANK</span></div>
+  <div class="ep">
+    <div class="ep-title" id="epTitle">Waiting for an episode…</div>
+    <div class="ep-meta"><span class="pill" id="epPanel">—</span><span class="pill" id="epMode">—</span><span class="pill live" id="epLive" hidden>● LIVE</span></div>
+  </div>
+  <div class="controls">
+    <select id="epPick" aria-label="Episodes"></select>
+    <button id="btnSpeed" title="Playback speed">1×</button>
+    <button id="btnReplay" title="Replay">↺ Replay</button>
+    <a id="btnReport" class="btn gold" target="_blank" hidden>📄 Outcome report</a>
+  </div>
+</header>
+
+<main class="layout">
+  <section class="stage" id="stage">
+    <div class="sharks" id="sharks"></div>
+    <div class="floor">
+      <div class="screen" id="screen">
+        <div class="screen-inner" id="screenInner">
+          <div class="slide-kicker">THE TANK</div>
+          <div class="slide-title">Run <code>/shark-tank</code> in Claude Code</div>
+          <div class="slide-body">Pitch an idea or a project. The sharks will be waiting.</div>
+        </div>
+      </div>
+      <div class="founder" id="founder">
+        <div class="bubble founder-bubble" id="founderBubble" hidden></div>
+        <div class="founder-av" id="founderAv"></div>
+        <div class="podium"><span id="founderName">Founder</span></div>
+      </div>
+    </div>
+    <div class="meter" id="meter">
+      <div class="m"><label>The ask</label><b id="mAsk">—</b></div>
+      <div class="m"><label>Implied valuation</label><b id="mVal">—</b></div>
+      <div class="m"><label>Sharks still in</label><b id="mIn">—</b></div>
+      <div class="m"><label>Best offer</label><b id="mBest">—</b></div>
+    </div>
+    <div class="phase" id="phase" hidden><div class="phase-t" id="phaseT"></div><div class="phase-s" id="phaseS"></div></div>
+    <div class="overlay" id="overlay" hidden></div>
+  </section>
+
+  <aside class="side">
+    <div class="tabs"><button class="tab on" data-tab="feed">Live feed</button><button class="tab" data-tab="score">Scoreboard</button><button class="tab" data-tab="offers">Offers</button></div>
+    <div class="pane on" id="feed"></div>
+    <div class="pane" id="score"><div class="empty">Scores land after the grilling.</div></div>
+    <div class="pane" id="offers"><div class="empty">No offers yet.</div></div>
+  </aside>
+</main>
+
+<dialog id="ask" class="askdlg">
+  <form method="dialog" id="askForm">
+    <h2>🎤 The sharks are waiting on <em>you</em></h2>
+    <p class="muted">Manual mode: answer in your own words. Claude Code picks it up the moment you submit.</p>
+    <div id="askList"></div>
+    <div class="ask-actions"><button type="submit" class="btn gold" value="send">Send answers to the Tank</button></div>
+  </form>
+</dialog>
+
+<script type="module" src="/app.js"></script>
+</body>
+</html>

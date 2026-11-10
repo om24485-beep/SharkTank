@@ -1,0 +1,15 @@
+{
+  "offers": [
+    { "sharks": ["victor"], "amount": 250000, "equity": 10, "royalty": "$1.00 per unit until $500k, then $0.25 forever", "conditions": [], "line": "I'll give you exactly what you asked. Ten percent. Plus a dollar a unit until I've got half a million back, then a quarter forever. You keep control, I keep getting paid." },
+    { "sharks": ["lena"], "amount": 250000, "equity": 25, "conditions": ["TV and retail launch within 90 days"], "line": "Two hundred fifty thousand for twenty-five percent. I'll have you on live TV in ninety days and in stores by spring." },
+    { "sharks": ["rosa"], "amount": 250000, "equity": 30, "conditions": [], "line": "Two-fifty for thirty percent, and I'll walk you into every chain I know." }
+  ],
+  "negotiation": [
+    { "who": "dana", "kind": "banter", "text": "Maya, a quarter forever is a curse on your margin. Don't do the royalty." },
+    { "who": "founder", "by": "human", "kind": "counter", "text": "Lena, you're the shark I wanted. Would you do $250,000 for 15%?", "offer": { "sharks": ["lena"], "amount": 250000, "equity": 15 } },
+    { "who": "lena", "kind": "counter", "text": "I hear you. I'll come down to 22 percent, and that includes the TV launch. That's my best.", "offer": { "sharks": ["lena"], "amount": 250000, "equity": 22, "conditions": ["TV and retail launch within 90 days"] } },
+    { "who": "founder", "by": "human", "kind": "counter", "text": "Eighteen and I'll shake your hand right now.", "offer": { "sharks": ["lena"], "amount": 250000, "equity": 18 } },
+    { "who": "lena", "kind": "withdraw", "text": "Twenty-two is fair for what I bring, Maya. I'm going to hold. I wish you so much luck." },
+    { "who": "founder", "by": "human", "kind": "walk", "text": "Thank you, all of you. I'd rather own the hero than sell it cheap. I'm going to get that patent and come back." }
+  ]
+}

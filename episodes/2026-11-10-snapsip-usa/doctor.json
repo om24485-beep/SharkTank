@@ -1,0 +1,25 @@
+{
+  "verdict_line": "A hero product priced like a venture deal. Fundable at roughly $1.1-1.25M today; the granted patent and lower ad dependence are worth the gap to Maya's number.",
+  "fixes": [
+    { "title": "Get the utility patent granted before the next raise", "why": "Lena and Dana both tied value to IP; 'pending' capped the valuation.", "how": "Pay for prioritised examination where available and lead with the design patent already filed." },
+    { "title": "Cut ad dependence below 15% of revenue", "why": "Dana went out because half the sales are rented.", "how": "Push repeat (31% today) with bundle packs and a subscribe-and-save offer; show organic share by month." },
+    { "title": "Price the ask off profit, not hope", "why": "Victor's 6x-sales jab framed the whole negotiation.", "how": "Show contribution per unit, retail purchase orders and next-year profit; ask at a multiple you can defend." },
+    { "title": "Open with the Coke-on-the-desk story", "why": "It won Rosa outright and is the best proof of retail pull.", "how": "Make it the hook slide, then do the flip test live." },
+    { "title": "Bring retail proof, not just Amazon proof", "why": "Every interested shark was buying a retail future.", "how": "Bring sell-through from the 40 gas stations and at least one signed regional PO." }
+  ],
+  "objections": [
+    { "shark": "victor", "q": "Six times sales for a plastic lid. Why?", "weak": "It's a habit, and retail hasn't started.", "strong": "86% gross margin, 31% repeat, and a [regional chain] PO for [N] stores. On next year's [profit target] this is [multiple]x profit." },
+    { "shark": "dana", "q": "What happens if you turn off Amazon ads?", "weak": "Sales would probably drop by half.", "strong": "Organic is now [x]% of sales, repeat customers are 31%, and the 40 gas stations sell [N] units a week without a single ad." },
+    { "shark": "lena", "q": "Patent, or patent pending?", "weak": "Utility patent pending, plus a design patent.", "strong": "Design patent filed, utility patent [status], and we have [N] months of tooling lead over a copier." },
+    { "shark": "dana", "q": "What is your profit over twelve months?", "weak": "About $38,000 after paying myself.", "strong": "$38k after a $60k salary and reinvesting in inventory; at retail scale contribution per unit stays near $6.50." }
+  ],
+  "note": "Text in [brackets] is a fact only the founder can supply. Fill it in before you pitch.",
+  "pitch_v2": "Eight times a gas station manager in Ohio told me no. On the ninth visit I spilled a Coke on his desk, then did it again with SnapSip on the can. He took 40 stores. SnapSip is a magnetic lid that turns any can into a leak-proof travel cup. It costs $2.10 and sells for $14.99. In 14 months: $410k in sales, 4.6 stars on 3,900 reviews, 31% buy again. I'm raising $250,000 to fund retail inventory and finish the patent.",
+  "metrics_to_bring": ["Organic vs paid sales by month", "Repeat rate by cohort", "Gas-station sell-through per store per week", "Contribution per unit by channel", "Patent filing status and claims", "Retail purchase orders"],
+  "dd_checklist": ["Patent filings and freedom-to-operate check", "Factory capacity letter", "Amazon account health and returns rate", "Food-contact material certifications", "Retail chain agreements", "Inventory and cash position"],
+  "next_steps": [
+    { "when": "This week", "action": "Rewrite the hook around the gas station story and rehearse the flip test." },
+    { "when": "60 days", "action": "Launch subscribe-and-save bundles and cut ads to under 15% of revenue." },
+    { "when": "6 months", "action": "Go back to investors with a granted patent and one regional retail PO." }
+  ]
+}

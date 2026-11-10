@@ -1,0 +1,13 @@
+{
+  "tagline": "Snap it. Sip it. Seal it.",
+  "one_liner": "SnapSip is a magnetic lid that turns any can into a leak-proof travel cup in one click.",
+  "slides": [
+    { "kicker": "The hook", "title": "Ever tipped a soda into your car's cup holder?", "body": "Forty billion cans a year in the US. Not one of them closes.", "stats": [{ "value": "40B", "label": "US cans a year" }], "say": "Sharks, raise your hand if you've ever spilled half a can in your car. Forty billion cans a year in America and not one of them closes. Until now." },
+    { "kicker": "The solution", "title": "One click. Zero spills.", "bullets": ["Food-grade magnetic ring grips any 12 oz or 16 oz can", "Slide-to-seal lid, dishwasher safe", "Fits every cup holder"], "say": "Watch. Click, it's on. Slide, it's sealed. Turn it upside down: not a drop. It fits every standard can and every cup holder." },
+    { "kicker": "Traction", "title": "$410k in 14 months", "stats": [{ "value": "$410k", "label": "TTM sales" }, { "value": "4.6★", "label": "3,900 reviews" }, { "value": "86%", "label": "gross margin" }, { "value": "31%", "label": "buy a 2nd pack" }], "say": "We launched fourteen months ago. Four hundred and ten thousand dollars in sales, four point six stars on almost four thousand reviews, and thirty-one percent of customers come back for a second pack." },
+    { "kicker": "Unit economics", "title": "$2.10 to make. $14.99 to buy.", "bullets": ["Landed cost $2.10", "Amazon fees and ads ~ $6.40 per unit", "~ $6.50 contribution per unit"], "say": "It costs me two dollars ten to make. It sells for fourteen ninety-nine. After Amazon and ads I keep about six fifty a unit." },
+    { "kicker": "Why me", "title": "Designed by someone who spills", "body": "I'm an industrial designer. I built forty prototypes in my garage before one survived a pothole test.", "say": "I'm an industrial designer, and a professional spiller. Forty prototypes in my garage before one survived my pothole test." }
+  ],
+  "ask": { "amount": 250000, "equity": 10, "amount_label": "$250,000", "use_of_funds": [{ "label": "Retail inventory", "pct": 55 }, { "label": "Patent + tooling", "pct": 20 }, { "label": "Marketing", "pct": 25 }], "line": "I'm asking for two hundred fifty thousand dollars for ten percent, and a shark who can put SnapSip on a shelf." },
+  "elevator_60s": "SnapSip is a magnetic lid that turns any can into a leak-proof travel cup. It costs $2.10 to make and sells for $14.99. In 14 months we've sold $410k with 4.6 stars on 3,900 reviews and 31% repeat purchase. I want $250k for 10% to get into retail."
+}

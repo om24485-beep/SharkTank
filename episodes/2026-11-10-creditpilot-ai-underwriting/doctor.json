@@ -1,0 +1,88 @@
+{
+  "verdict_line": "Fundable at ₹30 crore, not ₹75 crore. The founder story and the human-in-the-loop design won the room; concentration risk and a founder-only sales engine cost the valuation.",
+  "fixes": [
+    {
+      "title": "Lead with the human-in-the-loop design",
+      "why": "The RBI accountability answer flipped the toughest shark. It came in Round 2; it should be on slide 3.",
+      "how": "Add one line under the solution slide: 'We never approve a loan. Every memo is signed by a human and carries a full audit trail.'"
+    },
+    {
+      "title": "Kill the 41% concentration before the next raise",
+      "why": "Two sharks named it as the number that keeps them up. It is the single biggest discount on your valuation.",
+      "how": "Close the two signed January pilots and one new lender. Target: top customer under 30% of ARR within 12 months."
+    },
+    {
+      "title": "Replace the market comp with an earned valuation",
+      "why": "31x ARR from 'other rounds' read as fantasy. Founders who explain their number keep more equity.",
+      "how": "Show net revenue retention, payback per lender and a 12-month ARR plan with named pipeline. Price off next-year ARR, not peers."
+    },
+    {
+      "title": "Turn sales into a machine, not a founder",
+      "why": "A 4-6 month cycle with one seller pushed the brand shark out.",
+      "how": "Productise a 30-day paid pilot with a fixed success metric (TAT and analyst hours saved), and hire one enterprise seller from an LOS vendor."
+    },
+    {
+      "title": "Name your moat as data, with a number",
+      "why": "'They are slow' did not convince the competition hawk. '11,400 labelled credit files' did.",
+      "how": "Put the labelled-file count, its growth rate and the fraud-catch rate versus manual review on the competition slide."
+    }
+  ],
+  "objections": [
+    {
+      "shark": "vikram",
+      "q": "Thirty-one times revenue. How did you arrive at this number?",
+      "weak": "We looked at the last three lending-infra rounds.",
+      "strong": "We price off next year, not peers: [next-year ARR target] backed by the two signed January term sheets and a named pipeline of [N] lenders. Here is the pipeline, lender by lender."
+    },
+    {
+      "shark": "meera",
+      "q": "What if your biggest customer walks?",
+      "weak": "We lose ₹1 crore of ARR.",
+      "strong": "They are on a [contract term] contract with [notice period] notice, and our plan gets every lender under 30% of ARR within 12 months. Here is the plan, quarter by quarter."
+    },
+    {
+      "shark": "ananya",
+      "q": "What happens when a bureau or LOS vendor gives this away free?",
+      "weak": "They are slow and want to sell big platforms.",
+      "strong": "Their free tool extracts data. Ours catches fraud with a model trained on 11,400 labelled credit files, at [catch rate]% above manual review. Bundling a spreadsheet does not bundle that."
+    },
+    {
+      "shark": "kabir",
+      "q": "How do you sell, and how long does a deal take?",
+      "weak": "It's me, and it takes 4 to 6 months.",
+      "strong": "A 30-day paid pilot with one fixed success metric. Five of our six pilots have either paid or signed. With one enterprise seller we target a [target] week cycle."
+    }
+  ],
+  "pitch_v2": "Every NBFC in India makes small businesses wait three days for a loan while analysts copy numbers from PDFs. CreditPilot reads bank statements, GST and bureau data in 90 seconds, catches fraud patterns using 11,400 labelled credit outcomes, and drafts a credit memo where every number links to its source. We never approve a loan: a human signs every memo, with a full audit trail built for RBI. Six lenders are live, three pay us, ARR is ₹2.4 crore at 78% gross margin, and two more have signed for January. We are raising ₹1.5 crore to finish our model-risk audit, hire our first enterprise seller, and get no lender above 30% of revenue within a year.",
+  "metrics_to_bring": [
+    "Net revenue retention per lender",
+    "Pilot-to-paid conversion rate",
+    "Fraud catch rate vs manual review",
+    "Analyst hours saved per 100 files",
+    "Named pipeline with stage and expected ARR",
+    "Customer concentration plan by quarter"
+  ],
+  "dd_checklist": [
+    "Signed customer contracts and notice periods",
+    "Model-risk audit scope and vendor",
+    "Data processing agreements and data residency",
+    "Cap table and ESOP pool",
+    "Founder vesting schedule",
+    "Security review reports from pilot lenders"
+  ],
+  "next_steps": [
+    {
+      "when": "This week",
+      "action": "Move the human-in-the-loop line onto the solution slide and rehearse the new valuation answer."
+    },
+    {
+      "when": "30 days",
+      "action": "Close both January pilots as paid and appoint the model-risk auditor."
+    },
+    {
+      "when": "90 days",
+      "action": "Hire one enterprise seller and launch the 30-day paid pilot package."
+    }
+  ],
+  "note": "Text in [brackets] is a fact only the founder can supply. Fill it in before you pitch."
+}
