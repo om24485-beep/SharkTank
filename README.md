@@ -6,6 +6,8 @@
 
 You give Claude an idea in one line, or point it at a project (a repo, a folder, a README, a URL). A **founder agent** turns it into a Shark Tank pitch with a deck. A panel of **five AI sharks**, each built from research into how the real Shark Tank India and Shark Tank USA investors judge deals, fires questions at it. In **auto mode** the founder agent answers and negotiates. In **manual mode** you're in the hot seat. The sharks score the pitch, go in or out, make offers, fight each other over terms, and the episode ends in **DEAL** or **NO DEAL**, with a self-contained HTML report you can present from.
 
+🎬 [Watch the 40-second reel](docs/sharktank-reel.mp4)
+
 Inspired by [nateherkai/roast-room](https://github.com/nateherkai/roast-room), rebuilt for fundraising: a pitch, a grilling, real offer mechanics and an outcome report.
 
 ## What you get
