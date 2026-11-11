@@ -15,7 +15,8 @@ const dir = path.resolve(arg.includes("/") || arg.includes("\\") ? arg : path.jo
 const outIdx = process.argv.indexOf("--out");
 const OUT = outIdx > 0 ? path.resolve(process.argv[outIdx + 1]) : path.join(dir, "outcome.html");
 
-const P = JSON.parse(fs.readFileSync(path.join(ROOT, "skills", "shark-tank", "panels.json"), "utf8"));
+const SKILL_DIR = fs.existsSync(path.join(ROOT, "panels.json")) ? ROOT : path.join(ROOT, "skills", "shark-tank");
+const P = JSON.parse(fs.readFileSync(path.join(SKILL_DIR, "panels.json"), "utf8"));
 const SH = Object.fromEntries(P.sharks.map((s) => [s.key, s]));
 const rd = (f) => { const p = path.join(dir, f); return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf8")) : null; };
 const ep = rd("episode.json");

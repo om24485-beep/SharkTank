@@ -7,7 +7,8 @@ import { fileURLToPath } from "node:url";
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
 export const EPISODES = path.resolve(process.env.SHARKTANK_EPISODES || path.join(ROOT, "episodes"));
-export const PANELS = JSON.parse(fs.readFileSync(path.join(ROOT, "skills", "shark-tank", "panels.json"), "utf8"));
+export const SKILL_DIR = fs.existsSync(path.join(ROOT, "panels.json")) ? ROOT : path.join(ROOT, "skills", "shark-tank");
+export const PANELS = JSON.parse(fs.readFileSync(path.join(SKILL_DIR, "panels.json"), "utf8"));
 
 function readJson(dir, name) {
   const f = path.join(dir, name);

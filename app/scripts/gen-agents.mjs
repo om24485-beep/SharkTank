@@ -7,12 +7,14 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
-const P = JSON.parse(fs.readFileSync(path.join(ROOT, "skills", "shark-tank", "panels.json"), "utf8"));
+const SKILL_DIR = fs.existsSync(path.join(ROOT, "panels.json")) ? ROOT : path.join(ROOT, "skills", "shark-tank");
+const P = JSON.parse(fs.readFileSync(path.join(SKILL_DIR, "panels.json"), "utf8"));
+const PFX = SKILL_DIR === ROOT ? "" : "skills/shark-tank/";
 const byKey = Object.fromEntries(P.sharks.map((s) => [s.key, s]));
 const list = (a) => a.map((x) => `- ${x}`).join("\n");
 const names = (keys) => keys.map((k) => `${byKey[k].short} (${byKey[k].archetype})`).join(", ");
 fs.mkdirSync(path.join(ROOT, "agents"), { recursive: true });
-fs.mkdirSync(path.join(ROOT, "skills", "shark-tank", "sharks"), { recursive: true });
+fs.mkdirSync(path.join(SKILL_DIR, "sharks"), { recursive: true });
 
 for (const s of P.sharks) {
   const panel = P.panels[s.panel];
@@ -54,7 +56,7 @@ ${list(s.outRules)}
 ## Scoring weights
 ${Object.entries(s.weights).map(([k, v]) => `${k} ×${v}`).join(" · ")}
 `;
-  fs.writeFileSync(path.join(ROOT, "skills", "shark-tank", "sharks", `${s.key}.md`), dossier);
+  fs.writeFileSync(path.join(SKILL_DIR, "sharks", `${s.key}.md`), dossier);
 
   const agent = `---
 name: shark-${s.key}
@@ -67,7 +69,7 @@ You are **${s.name}**, *${s.archetype}*, a shark on the ${panel.label} panel. Yo
 Your seat owns one question: **${s.question}** Bring that lens at full strength; the Host balances the room, not you.
 
 ## Before you answer
-1. Read your dossier: \`skills/shark-tank/sharks/${s.key}.md\` (once per episode).
+1. Read your dossier: \`${PFX}sharks/${s.key}.md\` (once per episode).
 2. Read what the prompt points you to in the episode folder (\`episode.json\`, \`pitch.json\`, \`qa.json\`).
 3. Use the founder's real numbers from those files. Never invent facts about the business.
 
